@@ -24,26 +24,26 @@ export function ImageList(props) {
 
 		    <div className="col-4">
 			<div className="pic-three"></div>
-			<h4 className="theme">Sports</h4>
+			<h4 className="theme">Hobbies</h4>
 			</div>
 			</div>
 
 			<div className="row">
 		    <div className="col-4">
 			<div className="pic-four"></div>
-			<h4 className="theme">Sports</h4>
+			<h4 className="theme">Travel</h4>
 			</div>
 
 	
 		    <div className="col-4">
 			<div className="pic-five"></div>
-			<h4 className="theme">Sports</h4>
+			<h4 className="theme">Academics</h4>
 			</div>
 
 
 		    <div className="col-4">
 			<div className="pic-six"></div>
-			<h4 className="theme">Sports</h4>
+			<h4 className="theme">Challenge your Limits</h4>
 			</div>
 			</div>
 		</div>

@@ -14,3 +14,23 @@ button.share{
 .edit:focus{
   background-color: #155544;
 }
+
+@media only screen and (max-width: 910px) {
+	button.edit, button.share {
+		font-size: 18px;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	button.edit, button.share {
+		font-size: 12px;
+	}
+}
+
+@media only screen and (max-width: 730px) {
+    .action-buttons {
+       margin: 8px 3px;
+       padding-top: 5px;
+       padding-bottom: 5px;
+  }
+}
