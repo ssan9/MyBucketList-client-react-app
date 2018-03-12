@@ -53,3 +53,22 @@
   text-align: center;
 }
 
+.footer{
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #1076B0;
+  color: white;
+}
+
+.footer a{
+  font-size: 15px;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.footer a:hover{
+  color: cyan;
+}

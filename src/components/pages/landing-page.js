@@ -32,6 +32,12 @@ export function LandingPage(props) {
 		<ImageList />
 		
 		<UserStories />	
+
+    <footer className="footer">
+      <small>&copy; 2017 Swati Ankit - <a href="https://github.com/ssan9" target="_blank">
+        "https://github.com/ssan9"</a>
+      </small>
+    </footer>
 	</div>
   );
 }
