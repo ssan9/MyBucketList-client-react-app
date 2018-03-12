@@ -24,8 +24,6 @@ export function TodoGoals(props) {
 				</table>
 	      	</div>
 	    </div>	
-      			
-      			
     </div>
   );
 }

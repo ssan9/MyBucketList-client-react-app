@@ -13,7 +13,7 @@ export function Stories(props) {
 				<h4 className="user-info">John, 34-New York</h4>
 			</div>
 		</div>
-		);
+	);
 }
 
 

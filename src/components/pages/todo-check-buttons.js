@@ -6,9 +6,9 @@ import "./todo-check-buttons.css";
 export function TodoCheckButtons(props) {
   return (
     <div className="change-buttons">
-						<button className="done-button update-buttons" aria-label="Click done">&#10004;</button>				<td>{props.description}</td>
-						<button className="remove-button update-buttons" aria-label="Cancel">&#x274C;</button>				
-						</div>	
+		<button className="done-button update-buttons" aria-label="Click done">&#10004;</button>				<td>{props.description}</td>
+		<button className="remove-button update-buttons" aria-label="Cancel">&#x274C;</button>				
+	</div>	
       			
   );
 }

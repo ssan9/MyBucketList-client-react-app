@@ -12,21 +12,20 @@ export function GoalsTable(props) {
       		<div className="todo-completed">
       			<h3 className="heading">{props.heading}</h3>
       			<div className="lists">
-	 			<table>
+	 			     <table>
       				<tr>
       					<div className="change-button">
-						<button className="delete-button" aria-label="Cancel">&#x274C;</button>
-						</div>
-						<td>{props.description}</td>
-						<td>{props.created}</td>
-						<td>{props.completed}</td>
-						<td className="edit" aria-label="edit"><button className="edit action-buttons">Edit</button></td>
-						<td className="share" aria-label="share"><button className="share action-buttons">Share</button></td>
-					</tr>
-			</table>
-	      	</div>
-      	</div>
-      			
+						      <button className="delete-button" aria-label="Cancel">&#x274C;</button>
+						    </div>
+      					<td>{props.description}</td>
+      					<td>{props.created}</td>
+      					<td>{props.completed}</td>
+      					<td className="edit" aria-label="edit"><button className="edit action-buttons">Edit</button></td>
+      					<td className="share" aria-label="share"><button className="share action-buttons">Share</button></td>
+					    </tr>
+			       </table>
+	      	  </div>
+      	  </div>
     </div>
   );
 }

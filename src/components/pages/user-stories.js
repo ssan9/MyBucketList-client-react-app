@@ -12,7 +12,7 @@ export function UserStories(props) {
 			<h2 className="stories-title">Stories which Inspire...</h2>
 			<Stories />
 		</div>
-		);
+	);
 }
 
 

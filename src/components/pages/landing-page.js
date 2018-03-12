@@ -15,19 +15,19 @@ import "./landing-page.css";
 export function LandingPage(props) {
   return (
     <div className="landing-page">
-    <div className="bucketlist-image">
-    	<div className="landing-title">
-      		<h2 className="dream-title">Create a BucketList, Fulfill Your Dreams...</h2>
-    	</div>
-    	<div className="tab-group">
-    		<ul>
-    			<li><a href="signup">Signup</a></li>
-    			<li><a href="login">Login</a></li>
-    		</ul>	
-    	</div>
+      <div className="bucketlist-image">
+      	<div className="landing-title">
+        		<h2 className="dream-title">Create a BucketList, Fulfill Your Dreams...</h2>
+      	</div>
+      	<div className="tab-group">
+      		<ul>
+      			<li><a href="signup">Signup</a></li>
+      			<li><a href="login">Login</a></li>
+      		</ul>	
+      	</div>
       </div>
 
-    	<Options />
+    <Options />
 
 		<ImageList />
 		
@@ -38,6 +38,7 @@ export function LandingPage(props) {
         "https://github.com/ssan9"</a>
       </small>
     </footer>
+    
 	</div>
   );
 }

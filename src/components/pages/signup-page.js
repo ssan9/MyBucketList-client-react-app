@@ -16,78 +16,72 @@ export function SignupPage(props) {
         <form className="register-form">
             <div className="top-row">
             <div className="fields">
-
-            <input 
-              type="text" 
-              name="first-name" 
-              id="first-name" 
-              className="name register"
-              autoComplete="off"
-              aria-labelledby="First Name"
-              placeholder="First Name"
-              required
-            />
+              <input 
+                type="text" 
+                name="first-name" 
+                id="first-name" 
+                className="name register"
+                autoComplete="off"
+                aria-labelledby="First Name"
+                placeholder="First Name"
+                required
+              />
             </div>
-                        <div className="fields">
-
-            <input 
-              type="text"
-              name="last-name"
-              id="last-name"
-              className="name register"
-              autoComplete="off"
-              aria-labelledby="Last Name"
-              placeholder="Last Name"
-              required
-            /> 
+            <div className="fields">
+              <input 
+                type="text"
+                name="last-name"
+                id="last-name"
+                className="name register"
+                autoComplete="off"
+                aria-labelledby="Last Name"
+                placeholder="Last Name"
+                required
+              /> 
             </div>
             </div>
-                        <div className="fields">
-
-            <input 
-              type="text"
-              name="username"
-              id="username"
-              className="register"
-              autoComplete="off"
-              aria-labelledby="Username"
-              placeholder="Username"
-              required
-            />
+            <div className="fields">
+              <input 
+                type="text"
+                name="username"
+                id="username"
+                className="register"
+                autoComplete="off"
+                aria-labelledby="Username"
+                placeholder="Username"
+                required
+              />
             </div>
-                        <div className="fields">
-
-            <input 
-              type="email"
-              name="email"
-              id="email"
-              className="register auth"
-              autoComplete="off"
-              aria-labelledby="Email address"
-              placeholder="Email Address"
-              required
-            />
+            <div className="fields">
+              <input 
+                type="email"
+                name="email"
+                id="email"
+                className="register auth"
+                autoComplete="off"
+                aria-labelledby="Email address"
+                placeholder="Email Address"
+                required
+              />
             </div>
-                        <div className="fields">
-
-            <input
-              type="text"
-              name="password"
-              id="password"
-              className="register auth"
-              autoComplete="off"
-              aria-labelledby="Password"
-              placeholder="Password"
-              required
-            />
-
-          </div>
+            <div className="fields">
+              <input
+                type="text"
+                name="password"
+                id="password"
+                className="register auth"
+                autoComplete="off"
+                aria-labelledby="Password"
+                placeholder="Password"
+                required
+              />
+            </div>
 
           <h4 className="terms">By Signing up you agree to the Terms and Conditions</h4>
 
-        <button type="submit" className="create-account">
-            CREATE ACCOUNT
-        </button>
+          <button type="submit" className="create-account">
+              CREATE ACCOUNT
+          </button>
       </form>
     </div>
   );

@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 
 import "./completed-check-button.css";
 // import { Link, Redirect } from "react-router-dom";
-// import "./completed-check-buttons.css";
 
 export function CompletedCheckButton(props) {
   return (

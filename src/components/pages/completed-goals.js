@@ -13,15 +13,15 @@ export function CompletedGoals(props) {
       		<div className="todo-completed">
       			<h3 className="heading">Your Completed Goals...</h3>
       			<div className="lists">
-	 			<table>
-      				<tr>
-      					<CompletedCheckButton />
-						<td>{props.description}</td>
-						<td>{props.created}</td>
-						<td>{props.completed}</td>
-						<TableButtons />
-					</tr>
-			</table>
+  	 			    <table>
+        				<tr>
+        					<CompletedCheckButton />
+      						<td>{props.description}</td>
+      						<td>{props.created}</td>
+      						<td>{props.completed}</td>
+      						<TableButtons />
+      					</tr>
+  			      </table>
 	      	</div>
       	</div>
       			

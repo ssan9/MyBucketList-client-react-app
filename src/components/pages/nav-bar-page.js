@@ -17,7 +17,7 @@ export default function NavigationBar(props) {
 			                <li><a href="goals">View Your Goals</a></li>
 			               	<li><a href="logout">Logout</a></li>
 						</ul>
-					</div>	
+				</div>	
         </nav>
     )
 }
