@@ -10,3 +10,9 @@
 * Start out with the BlogPost API on thinkful.
 * Do it in a different repo!
 * Postman!
+
+GET /api/goals
+GET /api/goals/:id
+POST /api/goals
+PUT /api/goals/:id
+DELETE /api/goals/:id
