@@ -2,8 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { Route, withRouter } from "react-router-dom";
 
-import HeaderBar from "./header-bar";
-import NavigationBar from"./pages/nav-bar-page";
+import NavigationBar from "./pages/navigation-bar";
 import LandingPage from "./pages/landing-page";
 import LoginPage from "./pages/login-page";
 import SignupPage from "./pages/signup-page";
@@ -47,10 +46,8 @@ export class App extends React.Component {
   // <Route exact path="/register" component={RegistrationPage} />
   render() {
     return (
-
       <div className="app">
-        <NavigationBar />
-        <HeaderBar />
+        <NavigationBar loggedIn={true} />
         <Route exact path="/" component={LandingPage} />
         <Route exact path="/login" component={LoginPage} />
         <Route exact path="/signup" component={SignupPage} />

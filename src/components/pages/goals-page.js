@@ -9,8 +9,8 @@ import "./goals-page.css";
 export function GoalsPage(props) {
   return (
     <div className="goals">
-    	<ToDoGoals />
-		<CompletedGoals />
+      <ToDoGoals />
+      <CompletedGoals />
     </div>
   );
 }
