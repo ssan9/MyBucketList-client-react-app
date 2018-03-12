@@ -1,14 +1,38 @@
 import React from "react";
 import { connect } from "react-redux";
-import { Link, Redirect } from "react-router-dom";
 
+import { Options } from "./options"; 
+import { ImageList } from "./image-list";
+import { UserStories } from "./user-stories";
+
+import "./float-grid.css";
+
+// import { Link, Redirect } from "react-router-dom";
+
+// import {title, landingLinks, links} from "./nav-links-and-titles-page";
 import "./landing-page.css";
 
 export function LandingPage(props) {
   return (
-    <div className="home">
-      <h2>Landing</h2>
-    </div>
+    <div className="landing-page">
+    <div className="bucketlist-image">
+    	<div className="landing-title">
+      		<h2 className="dream-title">Create a BucketList, Fulfill Your Dreams...</h2>
+    	</div>
+    	<div className="tab-group">
+    		<ul>
+    			<li><a href="signup">Signup</a></li>
+    			<li><a href="login">Login</a></li>
+    		</ul>	
+    	</div>
+      </div>
+
+    	<Options />
+
+		<ImageList />
+		
+		<UserStories />	
+	</div>
   );
 }
 

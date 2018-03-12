@@ -1,0 +1,24 @@
+.options{
+  /*background-image: url("http://www.creativeglassshop.co.uk/userfiles/productlargeimages/product_2717.jpg");*/
+  /*background-repeat: no-repeat;*/
+  /*background-size: cover;*/
+  font-size: 14px;
+  text-align: center;
+  padding: 4%;
+  color: #1076B0;
+}
+
+.pic{
+  width: 100%;
+  padding: 0;
+}
+
+.transparent-portion {
+  padding: 2%;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.options-image{
+  width: 15%;
+}
+

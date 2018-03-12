@@ -1,0 +1,11 @@
+.user-stories {
+	z-index: -1;
+}
+
+.stories-title {
+  text-align:center;
+  color: #1076B0;
+  font-weight: 700;
+  margin: 50px 0 20px;
+  padding-top: 3%;
+}

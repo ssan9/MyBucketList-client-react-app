@@ -1,0 +1,24 @@
+.change-buttons {
+	position: relative;
+	display: inline-block;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+.done-button {
+	color: green;
+	font-weight: 900;
+	text-shadow: 1px 1px black;
+	font-size: 15.5px;
+	line-height: 19px;
+	margin-top: 13px;
+	margin-bottom: 13px;
+	position: absolute;
+	display: inline-block;
+}
+
+.remove-button {
+	left: 40px;
+	position: absolute;
+	top: 13px;
+}

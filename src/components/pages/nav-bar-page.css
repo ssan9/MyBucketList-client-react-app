@@ -1,0 +1,49 @@
+.navigation-bar {
+  box-sizing: border-box;
+  text-align: right;
+  position: fixed;
+  height: 50px;
+  background-color: #1076B0;
+  width: 100%;
+  top: 0;
+  z-index: -1;
+}
+
+#app-name {
+	position: relative;
+	text-align: left;
+	padding-left: 1%;
+	padding-right: 1%;
+	top: -8px;
+}
+
+#app-name a {
+	color: white;
+	text-decoration: none;
+}
+
+.nav-bar{
+  margin: 0;
+  position: relative;
+  top: -85px;
+  clear: both;
+}
+
+.nav-bar ul li{
+  display: inline-block;
+}
+
+.nav-bar ul li a{
+  text-decoration: none;
+  margin-right: 30px;
+  color: white;
+  font-size: 15px;
+  padding-top: 50px;
+}
+
+.navigation-bar a:hover{
+  color: cyan;
+}
+
+
+

@@ -1,1 +1,67 @@
+.create-item {
+	background-color: #CBE9F2;
+	z-index: -1;
+}
+
+.title {
+  text-align:center;
+  color: #1076B0;
+  font-weight: 700;
+  margin: 50px 0 20px;
+  padding-top: 3%;
+}
+
+.goal-creation-form {
+	padding: 40px;
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.create-goal{
+  font-size:22px;
+  width:100%;
+  border: 4px solid #1076B0;
+  color: #1076B0;
+  height: 60px;
+  padding-left: 13px;
+}
+
+.form-submit {
+	  margin:30px 0 300px 0;
+
+}
+
+.button {
+  font-size: 0;
+  display:inline-block;
+  background:rgba(160, 179, 176, 0.25);
+  color: white;
+  height:40px;
+  text-align: right;
+  cursor:pointer;
+  float: right;
+}
+
+.cancel-button {
+  background: #e05858;
+  font-size:20px;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.cancel-button:hover {
+  background: #841111;
+}
+
+.save-button {
+  background: #83D895;
+  color:white;
+  font-size:20px;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.save-button:hover {
+  background: #155544;
+}
 
