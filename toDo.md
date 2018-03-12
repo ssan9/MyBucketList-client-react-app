@@ -9,3 +9,4 @@
 * Start out a server project-> API.
 * Start out with the BlogPost API on thinkful.
 * Do it in a different repo!
+* Postman!
