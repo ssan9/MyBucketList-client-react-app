@@ -1,12 +1,12 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import "./float-grid.css";
+import "../reusable-components/float-grid.css";
 import "./options.css";
 
-import "./budget.png";
-import "./edit.png";
-import "./notepad.png";
+import "../images/budget.png";
+import "../images/edit.png";
+import "../images/notepad.png";
 
 export function Options(props) {
   return (
@@ -16,7 +16,7 @@ export function Options(props) {
           <div className="create-bucketList">
             <div className="create-budget-pic pic">
               <img
-                src={require("./notepad.png")}
+                src={require("../images/notepad.png")}
                 alt="Create your BucketList"
                 className="options-image transparent-portion"
               />
@@ -31,7 +31,7 @@ export function Options(props) {
           <div className="track-list">
             <div className="add-edit pic">
               <img
-                src={require("./edit.png")}
+                src={require("../images/edit.png")}
                 alt="Track Your List"
                 className="options-image transparent-portion"
               />
@@ -46,7 +46,7 @@ export function Options(props) {
           <div className="share">
             <div className="friends-share pic">
               <img
-                src={require("./budget.png")}
+                src={require("../images/budget.png")}
                 alt="Share with Friends"
                 className="options-image transparent-portion"
               />
@@ -60,3 +60,5 @@ export function Options(props) {
     </div>
   );
 }
+
+export default connect()(Options);

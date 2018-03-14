@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux"; 
 
 import "./image-list.css";
-import "./float-grid.css";
+import "../reusable-components/float-grid.css";
 
 export function ImageList(props) { 
 	return (
@@ -46,3 +46,5 @@ export function ImageList(props) {
 		</div>
 	);
 }
+
+export default connect()(ImageList);

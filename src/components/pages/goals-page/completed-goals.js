@@ -14,13 +14,15 @@ export function CompletedGoals(props) {
         <h3 className="heading">Your Completed Goals...</h3>
         <div className="lists">
           <table>
-            <tr>
-              <CompletedCheckButton />
-              <td>{props.description}</td>
-              <td>{props.created}</td>
-              <td>{props.completed}</td>
-              <TableButtons />
-            </tr>
+            <tbody>
+              <tr>
+                <td><CompletedCheckButton /></td>
+                <td>{props.description}</td>
+                <td>{props.created}</td>
+                <td>{props.completed}</td>
+                <td><TableButtons /></td>
+              </tr>
+            </tbody>  
           </table>
         </div>
       </div>

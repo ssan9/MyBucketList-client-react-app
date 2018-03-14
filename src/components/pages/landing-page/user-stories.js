@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 
 import Stories from "./stories";
-import "./float-grid.css";
+import "../reusable-components/float-grid.css";
 
 import "./user-stories.css";
 

@@ -14,13 +14,15 @@ export function TodoGoals(props) {
  			<h3 className="heading">Your To Do Goals...</h3>
 	 		<div className="lists">
 	 			<table>
-					<tr>
-						<TodoCheckButtons />
-						<td>{props.description}</td>
-						<td>{props.created}</td>
-						<td>{props.due}</td>
-						<TableButtons />
-					</tr>
+	 				<tbody>
+						<tr>
+							<td><TodoCheckButtons /></td>
+							<td>{props.description}</td>
+							<td>{props.created}</td>
+							<td>{props.due}</td>
+							<td><TableButtons /></td>
+						</tr>
+					</tbody>	
 				</table>
 	      	</div>
 	    </div>	

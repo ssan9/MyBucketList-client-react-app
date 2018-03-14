@@ -8,8 +8,8 @@ export function CompletedCheckButton(props) {
   return (
     <div className="completed-check-button">
     	<div className="change-button">
-				<button className="delete-button" aria-label="Cancel">&#x274C;</button>
-			</div>			
+			<button className="delete-button"><span role="img" aria-label="Click cancel">&#x274C;</span></button>
+		</div>			
     </div>
   );
 }

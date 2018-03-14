@@ -1,8 +1,8 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { Link, Redirect } from "react-router-dom";
+
+import { Link } from "react-router-dom"; //Redirect was also there after comma
 import "./navigation-bar.css";
-import { title, landingLinks, links } from "./nav-links-data";
+import { landingLinks, links } from "./nav-links-data"; //title was also there as the first component
 
 export default function NavigationBar(props) {
   let displayLinks = props.loggedIn ? links : landingLinks;

@@ -3,8 +3,9 @@ import { connect } from "react-redux";
 import { Options } from "./options";
 import { ImageList } from "./image-list";
 import { UserStories } from "./user-stories";
+import { Footer } from "../reusable-components/footer";
 
-import "./float-grid.css";
+import "../reusable-components/float-grid.css";
 
 // import { Link, Redirect } from "react-router-dom";
 
@@ -38,14 +39,8 @@ export function LandingPage(props) {
 
       <UserStories />
 
-      <footer className="footer">
-        <small>
-          &copy; 2017 Swati Ankit -{" "}
-          <a href="https://github.com/ssan9" target="_blank">
-            "https://github.com/ssan9"
-          </a>
-        </small>
-      </footer>
+      <Footer />
+
     </div>
   );
 }
