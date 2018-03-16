@@ -1,16 +1,29 @@
 import React from "react";
 import { connect } from "react-redux";
 
+import { createGoal } from '../actions/index';
 
 // import { Link, Redirect } from "react-router-dom";
 
 import "./create-item-page.css";
 
-export function CreateItemPage(props) {
+export class CreateItemPage extends React.Component {
+    onSubmit(event) {
+        event.preventDefault();
+
+        const value = this.input.value;
+        this.props.dispatch(createGoal(value));
+        this.input.value = '';
+        this.input.focus();
+    }
+
+    render() {
+
   return (
     <div className="create-item">
     	<h2 className="title">Create Your Goal!</h2>
-    		<form className="goal-creation-form">
+    		<form className="goal-creation-form"
+                onSubmit={e => this.onSubmit(e)}>
     		  <div className="fields">
     		       <input
             			type="text"
@@ -29,6 +42,7 @@ export function CreateItemPage(props) {
             			aria-labelledby="Choose a category"
             			placeholder="Category"
             			required
+
             		/>
             		<input
             			type="date"
@@ -47,6 +61,7 @@ export function CreateItemPage(props) {
             </form>	
     </div>
   );
+}
 }
 
 const mapStateToProps = state => ({
