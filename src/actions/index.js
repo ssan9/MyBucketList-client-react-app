@@ -5,6 +5,7 @@ import { Redirect } from "react-router-dom";
 // or clear/share
 
 export const getGoals = () => (dispatch, getState) => {
+  console.log("getGoals");
   const authToken = getState().auth.authToken;
   return fetch(`${API_BASE_URL}/goals`, {
     method: "GET",
@@ -59,7 +60,6 @@ export const postTodoGoal = goal => (dispatch, getState) => {
 // });
 
 export const putGoal = updateGoal => (dispatch, getState) => {
-  console.log(updateGoal);
   const authToken = getState().auth.authToken;
   // const user = getState().auth.currentUser.username;
   fetch(`${API_BASE_URL}/goals/${updateGoal.id}`, {
@@ -70,15 +70,11 @@ export const putGoal = updateGoal => (dispatch, getState) => {
     },
     body: JSON.stringify(updateGoal)
   })
-    .then(res => res.json())
-    .then(goal => dispatch(getGoals(goal)))
-
-    //  .then(goal => dispatch(putGoalSuccess(goal)))
+    .then(() => dispatch(getGoals()))
     .catch(err => {
       dispatch(goalsError(err));
     });
 };
-
 
 // export const PUT_GOAL_SUCCESS = "PUT_GOAL_SUCCESS";
 // export const putGoalSuccess = goal => ({
@@ -121,5 +117,3 @@ export const shareGoals = goals => ({
   type: SHARE_GOALS,
   goals
 });
-
-

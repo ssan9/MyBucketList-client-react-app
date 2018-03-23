@@ -11,30 +11,24 @@ export class CreateItemPage extends React.Component {
   onSubmit(event) {
     event.preventDefault();
     let goal = {
-        description: this.refs.description.value,
-        category: this.refs.category.value,
-        due: this.refs.due.value
+      description: this.refs.description.value,
+      category: this.refs.category.value,
+      due: this.refs.due.value
     };
-    // const goal = this.input.goal;
     this.props.dispatch(postTodoGoal(goal));
-    
-    // this.input.goal = "";
-    // this.input.focus();
-    
-    }
-    onClick(event) {
-      this.refs.description.value="",
-      this.refs.category.value="",
-      this.refs.due.value=""
-    };
-
-  
+    this.props.history.push(`/goals/`);
+  }
+  onClick(event) {
+    this.refs.description.value = "";
+    this.refs.category.value = "";
+    this.refs.due.value = "";
+  }
 
   render() {
     return (
       <div className="create-item">
         <h2 className="title">Create Your Goal!</h2>
-        <form className="goal-creation-form" onSubmit={e => this.onSubmit(e)} >
+        <form className="goal-creation-form" onSubmit={e => this.onSubmit(e)}>
           <div className="fields">
             <input
               type="text"
@@ -46,15 +40,24 @@ export class CreateItemPage extends React.Component {
               placeholder="Description"
               required
             />
-            <select name="category" ref="category" id="category" aria-label="category" className="create-goal" required>
-                <option value="0">Category</option>
-                <option value="Sports">Sports</option>
-                <option value="Events">Events</option>
-                <option value="Hobbies">Hobbies</option>
-                <option value="Travel">Travel</option>
-                <option value="Academics">Academics</option>
-                <option value="Challenge your Limits">Challenge your Limits</option>
-                <option value="Other">Other</option>
+            <select
+              name="category"
+              ref="category"
+              id="category"
+              aria-label="category"
+              className="create-goal"
+              required
+            >
+              <option value="0">Category</option>
+              <option value="Sports">Sports</option>
+              <option value="Events">Events</option>
+              <option value="Hobbies">Hobbies</option>
+              <option value="Travel">Travel</option>
+              <option value="Academics">Academics</option>
+              <option value="Challenge your Limits">
+                Challenge your Limits
+              </option>
+              <option value="Other">Other</option>
             </select>
             <input
               type="date"

@@ -12,15 +12,16 @@ export class GoalsPage extends React.Component {
   componentDidMount() {
     this.props.dispatch(getGoals());
   }
+
   render() {
-    console.log(this.props.goals);
+    let toDoGoals = this.props.goals.filter(goal => !goal.checked);
+    let completedGoals = this.props.goals.filter(goal => goal.checked);
 
     return (
       <div className="goals">
-        <ToDoGoals goals={this.props.goals} />
-
+        <ToDoGoals goals={toDoGoals} title="Not Completed" />
+        <ToDoGoals goals={completedGoals} title="Completed" />
         <Footer />
-        
       </div>
     );
   }

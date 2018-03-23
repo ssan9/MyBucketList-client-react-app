@@ -14,22 +14,31 @@ export function TableButtons(props) {
   // componentDidMount() {
   //   this.handleInitialize();
   // }
-    const currentGoal = {
-      "id": props.goal.id,
-      "description": props.goal.description,
-      "created": props.goal.created,
-      "due": props.goal.due
-    };
-    // props.initialize(currentGoal);
-  
+  const currentGoal = {
+    id: props.goal.id,
+    description: props.goal.description,
+    created: props.goal.created,
+    due: props.goal.due
+  };
+  // props.initialize(currentGoal);
+
   return (
     <div className="table-buttons">
-      
-        
-      <Link to={`/edit/${currentGoal.id}/${currentGoal.description}/${currentGoal.due}`}> <button className="edit action-buttons">Edit</button></Link>
-      <button className="share action-buttons" onClick={() => props.dispatch(shareGoals(goals))}>
-        Share 
+      <Link
+        to={`/edit/${currentGoal.id}/${currentGoal.description}/${
+          currentGoal.due
+        }`}
+      >
+        {" "}
+        <button className="edit action-buttons">Edit</button>
+      </Link>
+      <button
+        className="share action-buttons"
+        onClick={() => props.dispatch(shareGoals(goals))}
+      >
+        Share
       </button>
+      <button className="share action-buttons">Delete</button>
     </div>
   );
 }
