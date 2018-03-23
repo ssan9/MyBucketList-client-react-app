@@ -27,6 +27,18 @@
   padding-left: 13px;
 }
 
+.create-goal::placeholder {
+  color: #1076B0;
+}
+
+option {
+  font-size: 20px;
+}
+
+option:first-child{
+  display: none;
+}
+
 .form-submit {
 	margin:30px 0;
 }

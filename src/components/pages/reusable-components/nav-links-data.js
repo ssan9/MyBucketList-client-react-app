@@ -1,7 +1,12 @@
 import React from "react";
 
 
-export const title = "MyBucketList";
+export const title = [
+  {
+    text: "MyBucketList",
+    href: "/"
+  }
+]
 
 export const landingLinks = [
   {

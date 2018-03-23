@@ -1,5 +1,5 @@
 import { API_BASE_URL } from "../config";
-
+import { Redirect } from "react-router-dom";
 // Do not dispatch Sucess or error functions!
 // only the GET PUT POST DELETE ones
 // or clear/share
@@ -59,8 +59,9 @@ export const postTodoGoal = goal => (dispatch, getState) => {
 // });
 
 export const putGoal = updateGoal => (dispatch, getState) => {
+  console.log(updateGoal);
   const authToken = getState().auth.authToken;
-  const user = getState().auth.currentUser.username;
+  // const user = getState().auth.currentUser.username;
   fetch(`${API_BASE_URL}/goals/${updateGoal.id}`, {
     method: "PUT",
     headers: {
@@ -71,11 +72,13 @@ export const putGoal = updateGoal => (dispatch, getState) => {
   })
     .then(res => res.json())
     .then(goal => dispatch(getGoals(goal)))
+
     //  .then(goal => dispatch(putGoalSuccess(goal)))
     .catch(err => {
       dispatch(goalsError(err));
     });
 };
+
 
 // export const PUT_GOAL_SUCCESS = "PUT_GOAL_SUCCESS";
 // export const putGoalSuccess = goal => ({
@@ -85,7 +88,7 @@ export const putGoal = updateGoal => (dispatch, getState) => {
 
 export const deleteGoal = goalId => (dispatch, getState) => {
   const authToken = getState().auth.authToken;
-  const user = getState().auth.currentUser.username;
+  // const user = getState().auth.currentUser.username;
   fetch(`${API_BASE_URL}/goals/${goalId}`, {
     method: "DELETE",
     headers: {
@@ -118,3 +121,5 @@ export const shareGoals = goals => ({
   type: SHARE_GOALS,
   goals
 });
+
+

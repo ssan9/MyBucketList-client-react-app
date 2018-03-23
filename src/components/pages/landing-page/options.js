@@ -31,7 +31,7 @@ export function Options(props) {
           <div className="track-list">
             <div className="add-edit pic">
               <img
-                src={require("../images/edit.png")}
+                src={require("../images/list.png")}
                 alt="Track Your List"
                 className="options-image transparent-portion"
               />
@@ -46,7 +46,7 @@ export function Options(props) {
           <div className="share">
             <div className="friends-share pic">
               <img
-                src={require("../images/budget.png")}
+                src={require("../images/share.png")}
                 alt="Share with Friends"
                 className="options-image transparent-portion"
               />

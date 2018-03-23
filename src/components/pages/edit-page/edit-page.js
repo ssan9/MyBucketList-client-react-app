@@ -1,40 +1,47 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import { postTodoGoal } from "../../../actions/index";
+import { putGoal } from "../../../actions/index";
 
-import { Link, Redirect } from "react-router-dom";
+// import { Link, Redirect } from "react-router-dom";
 
-import "./create-item-page.css";
+// import "./create-item-page.css";
 
-export class CreateItemPage extends React.Component {
+export class EditPage extends React.Component {
+  constructor(props) {
+    super(props);
+     console.log(props);
+
+  }
   onSubmit(event) {
+    console.log(this, "this");
+    console.log(this.props, "props");
+    
+    // console.log(match);
     event.preventDefault();
     let goal = {
+        id: this.props.match.params.id,
         description: this.refs.description.value,
         category: this.refs.category.value,
         due: this.refs.due.value
-    };
-    // const goal = this.input.goal;
-    this.props.dispatch(postTodoGoal(goal));
-    
-    // this.input.goal = "";
+      };
+    // const value = this.input.value;
+    this.props.dispatch(putGoal(goal));
+    // this.input.value = "";
     // this.input.focus();
-    
-    }
-    onClick(event) {
+  }
+
+  onClick(event) {
       this.refs.description.value="",
       this.refs.category.value="",
       this.refs.due.value=""
     };
 
-  
-
   render() {
     return (
       <div className="create-item">
-        <h2 className="title">Create Your Goal!</h2>
-        <form className="goal-creation-form" onSubmit={e => this.onSubmit(e)} >
+        <h2 className="title">Edit Your Goal!</h2>
+        <form className="goal-creation-form" onSubmit={e => this.onSubmit(e)}>
           <div className="fields">
             <input
               type="text"
@@ -44,10 +51,11 @@ export class CreateItemPage extends React.Component {
               className="create-goal"
               aria-labelledby="Describe Your Goal!"
               placeholder="Description"
+              defaultValue={this.props.match.params.description || ''} 
               required
             />
             <select name="category" ref="category" id="category" aria-label="category" className="create-goal" required>
-                <option value="0">Category</option>
+                <option value="0" defaultValue={this.props.match.params.created || ''}>Category</option>
                 <option value="Sports">Sports</option>
                 <option value="Events">Events</option>
                 <option value="Hobbies">Hobbies</option>
@@ -64,10 +72,12 @@ export class CreateItemPage extends React.Component {
               className="create-goal"
               aria-labelledby="Due Date"
               placeholder="Due Date"
+              defaultValue={this.props.match.params.due || ''}
               required
             />
             <div className="form-submit">
               <button
+                type="submit"
                 className="cancel-button button"
                 id="cancel"
                 onClick={e => this.onClick(e)}
@@ -89,4 +99,4 @@ const mapStateToProps = state => ({
   loggedIn: state.auth.currentUser !== null
 });
 
-export default connect(mapStateToProps)(CreateItemPage);
+export default connect(mapStateToProps)(EditPage);

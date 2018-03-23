@@ -4,19 +4,23 @@ import { connect } from "react-redux";
 import TableButtons from "./table-buttons";
 // import { Link, Redirect } from "react-router-dom";
 import "./goals-page.css";
+import "./todo-goals.css";
+
 import TodoCheckButtons from "./todo-check-buttons";
 
+//why not this.props.goal
 export function TodoGoals(props) {
-  let goals = props.goals.map(goal => (
-    <tr>
+  console.log(props);
+  let goals = props.goals.map((goal, index) => (
+    <tr key={index}>
       <td>
-        <TodoCheckButtons />
+        <TodoCheckButtons goalId={goal.id}/>
       </td>
       <td>{goal.description}</td>
-      <td>{goal.created}</td>
-      <td>{goal.due}</td>
+      <td>Created: {goal.created}</td>
+      <td>Due: {goal.due}</td>
       <td>
-        <TableButtons />
+        <TableButtons goal={goal}/>
       </td>
     </tr>
   ));

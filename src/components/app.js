@@ -8,6 +8,7 @@ import LoginPage from "./pages/login-page";
 import SignupPage from "./pages/signup-page/signup-page";
 import CreateItemPage from "./pages/create-item-page/create-item-page";
 import GoalsPage from "./pages/goals-page/goals-page";
+import EditPage from "./pages/edit-page/edit-page"
 // import Dashboard from "./dashboard";
 // import RegistrationPage from "./registration-page";
 import { refreshAuthToken } from "../actions/auth";
@@ -53,6 +54,7 @@ export class App extends React.Component {
         <Route exact path="/signup" component={SignupPage} />
         <Route exact path="/create" component={CreateItemPage} />
         <Route exact path="/goals" component={GoalsPage} />
+        <Route exact path="/edit/:id/:description/:due" component={EditPage} />
       </div>
     );
   }
