@@ -27,6 +27,7 @@ export class EditPage extends React.Component {
       };
     // const value = this.input.value;
     this.props.dispatch(putGoal(goal));
+    this.props.history.push(`/goals/`);
     // this.input.value = "";
     // this.input.focus();
   }

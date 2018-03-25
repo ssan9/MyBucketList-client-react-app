@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 // import { initialize } from "redux-form";
 // import { browserHistory } from "react-router";
 import { Link } from "react-router-dom";
-import { shareGoals } from "../../../actions/index";
+import { shareGoals, deleteGoal } from "../../../actions/index";
 
 import "./table-buttons.css";
 // import { Link, Redirect } from "react-router-dom";
@@ -38,7 +38,12 @@ export function TableButtons(props) {
       >
         Share
       </button>
-      <button className="share action-buttons">Delete</button>
+      <button 
+        className="delete action-buttons"
+        onClick={() => props.dispatch(deleteGoal(props.goal.id))}
+      >
+        Delete
+      </button>
     </div>
   );
 }
