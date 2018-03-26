@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 // import { initialize } from "redux-form";
 // import { browserHistory } from "react-router";
 import { Link } from "react-router-dom";
-import { shareGoals, deleteGoal } from "../../../actions/index";
+import { deleteGoal } from "../../../actions/index";
 // import FacebookShareButton from "./fb-share-button";
 // import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import TestComponent from "./social-buttons";
@@ -13,7 +13,7 @@ import "./table-buttons.css";
 
 export function TableButtons(props) {
   console.log(props);
-  let goals;
+  
   // componentDidMount() {
   //   this.handleInitialize();
   // }

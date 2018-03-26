@@ -16,7 +16,7 @@ export default function NavigationBar(props) {
   });
 
   return (
-    <nav role="navigation" className="navigation-bar">
+    <nav className="navigation-bar">
       <h1 className="current" id="app-name">
         <Link to="/">MyBucketList</Link>
       </h1>

@@ -13,12 +13,7 @@ export default class TestComponent extends Component {
  render () {
    let url = ''
    if (this.isBrowser()) { url = window.location.href; }
- 
-   let whatsAppProps = {
-     msg: 'test',
-     button: <span>{'Your custom content'}</span>,
-   };
- 
+ console.log(url);
    return (
      <div id="buttons">
        <FacebookShareButton url={url} />

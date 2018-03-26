@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 
 import { postTodoGoal } from "../../../actions/index";
 
-import { Link, Redirect } from "react-router-dom";
+// import { Link, Redirect } from "react-router-dom";
 
 import "./create-item-page.css";
 

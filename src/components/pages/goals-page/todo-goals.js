@@ -8,7 +8,6 @@ import "./todo-goals.css";
 
 import { putGoal } from "../../../actions/index";
 
-import TodoCheckButtons from "./todo-check-buttons";
 
 //why not this.props.goal
 

@@ -33,9 +33,9 @@ export class EditPage extends React.Component {
   }
 
   onClick(event) {
-      this.refs.description.value="",
-      this.refs.category.value="",
-      this.refs.due.value=""
+      this.refs.description.value="";
+      this.refs.category.value="";
+      this.refs.due.value="";
     };
 
   render() {
