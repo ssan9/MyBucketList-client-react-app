@@ -18,7 +18,7 @@ export function Options(props) {
               <img
                 src={require("../images/notepad.png")}
                 alt="Create your BucketList"
-                className="options-image transparent-portion"
+                className="options-image"
               />
             </div>
             <div className="intro-part-one options-intro">
@@ -33,7 +33,7 @@ export function Options(props) {
               <img
                 src={require("../images/list.png")}
                 alt="Track Your List"
-                className="options-image transparent-portion"
+                className="options-image"
               />
             </div>
             <div className="intro-part-two options-intro">
@@ -48,7 +48,7 @@ export function Options(props) {
               <img
                 src={require("../images/share.png")}
                 alt="Share with Friends"
-                className="options-image transparent-portion"
+                className="options-image share-img"
               />
             </div>
             <div className="intro-part-three options-intro">

@@ -41,7 +41,7 @@ export class TodoGoals extends React.Component {
           <h3 className="heading">{this.props.title}</h3>
           <div className="lists">
             <table>
-              <thead className="header" cellpadding="10">
+              <thead className="header">
                 <tr>
                   <th>Checked</th>
                   <th>Description</th>
