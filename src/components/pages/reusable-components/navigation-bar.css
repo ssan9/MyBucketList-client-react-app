@@ -76,7 +76,7 @@
     top: -3px; 
   }
 
-  .navigation-bar ul {
+  .navigation-bar .nav-bar ul {
     margin: 50px 0;
     padding: 0;
     list-style: none;
@@ -86,27 +86,31 @@
     text-align: center;
   }
   
-  .navigation-bar ul li{
+  .navigation-bar .nav-bar ul li{
     display: block;
   }
 
-  .navigation-bar li a {
+  .navigation-bar .nav-bar ul li a {
     display: block;
-    padding: 0px 0px;
+    padding: 10px 0;
     border-right: 1px solid #f4f4f4;
     text-decoration: none;
-    color: #307c68;
+    color: #1076b0;
     width: 100%;
 
   }
 
-  .navigation-bar li a:hover {
+  .navigation-bar .nav-bar ul li a:hover {
     background-color: #1076b0;
+    color: cyan;
   }
    
    .nav-bar ul li a {
-    color: #1076b0;
     font-size: 18px;
+   }
+
+   .nav-bar-ul li a {
+    color: #1076b0;
   }
 
   .navigation-bar .current {
@@ -116,20 +120,20 @@
     text-decoration: none;
   }
 
-  .navigation-bar .nav_bar {
+  .navigation-bar .nav-bar-ul {
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
     float: right;
   }
-   .nav-bar .menu-icon {
+   .nav-bar-ul .menu-icon {
     cursor: pointer;
     display: inline-block;
     float: right;
     padding: 24px 110px;
     position: relative;
     user-select: none;
-    display: none;
+    /*display: none;*/
   }
 
   .navigation-bar .menu-icon .navicon {
@@ -140,7 +144,8 @@
     transition: background .2s ease-out;
     width: 18px;
     top: 24px;
-    right: -120px;
+    float: right;
+    right: 114px;
   }
 
   .navigation-bar .menu-icon .navicon:before,
@@ -166,7 +171,7 @@
     display: none;
   }
 
-  .navigation-bar .menu-btn:checked ~ .navigation-bar {
+  .navigation-bar .menu-btn:checked ~ .nav-bar .nav-bar-ul {
     max-height: 300px;
   }
 

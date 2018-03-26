@@ -25,7 +25,7 @@ export default function NavigationBar(props) {
         <span className="navicon" />
       </label>
       <div className="nav-bar">
-        <ul>{linkElements}</ul>
+        <ul className="nav-bar-ul">{linkElements}</ul>
       </div>
     </nav>
   );
