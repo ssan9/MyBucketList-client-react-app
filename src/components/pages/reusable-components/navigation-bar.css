@@ -6,26 +6,26 @@
   background-color: #1076b0;
   width: 100%;
   top: 0;
-  z-index: -1;
+  z-index: 1;
 }
 
 #app-name {
-  position: relative;
-  text-align: left;
-  padding-left: 1%;
-  padding-right: 1%;
+  position: absolute;
+  left: 1%;
   top: -8px;
+  z-index: 1;
 }
 
 #app-name a {
   color: white;
   text-decoration: none;
+  top: 0;
 }
 
 .nav-bar {
   margin: 0;
   position: relative;
-  top: -85px;
+  top: 1px;
   clear: both;
 }
 
@@ -38,9 +38,152 @@
   margin-right: 30px;
   color: white;
   font-size: 15px;
-  padding-top: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .navigation-bar a:hover {
   color: cyan;
+}
+
+.navigation-bar .current{
+  color: #34f634;
+  text-decoration: none;
+}
+
+.navigation-bar .menu-btn{
+  display: none;
+}
+
+@media only screen and (max-width: 1050px) {
+  .navigation-bar .menu-icon {
+    display: block;
+  }
+
+  .navigation-bar .menu-btn{
+    display: block;
+  }
+
+ 
+  .navigation-bar {
+    z-index: 3;
+    text-align: center;
+    padding-left: 50%;
+  }
+
+  #app-name {
+    font-size: 20px;
+    top: -3px; 
+  }
+
+  .navigation-bar ul {
+    margin: 50px 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+    width: 250px;
+    text-align: center;
+  }
+  
+  .navigation-bar ul li{
+    display: block;
+  }
+
+  .navigation-bar li a {
+    display: block;
+    padding: 0px 0px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+    color: #307c68;
+    width: 100%;
+
+  }
+
+  .navigation-bar li a:hover {
+    background-color: #1076b0;
+  }
+   
+   .nav-bar ul li a {
+    color: #1076b0;
+    font-size: 18px;
+  }
+
+  .navigation-bar .current {
+    display: block;
+    font-size: 2em;
+    padding: 0 20px;
+    text-decoration: none;
+  }
+
+  .navigation-bar .nav_bar {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+    float: right;
+  }
+   .nav-bar .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 24px 110px;
+    position: relative;
+    user-select: none;
+    display: none;
+  }
+
+  .navigation-bar .menu-icon .navicon {
+    background: white;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+    top: 24px;
+    right: -120px;
+  }
+
+  .navigation-bar .menu-icon .navicon:before,
+  .navigation-bar .menu-icon .navicon:after {
+    background: white;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+
+  .navigation-bar .menu-icon .navicon:before {
+    top: 5px;
+  }
+
+  .navigation-bar .menu-icon .navicon:after {
+    top: -5px;
+  }
+
+  .navigation-bar .menu-btn {
+    display: none;
+  }
+
+  .navigation-bar .menu-btn:checked ~ .navigation-bar {
+    max-height: 300px;
+  }
+
+  .navigation-bar .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+
+  .navigation-bar .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+
+  .navigation-bar .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+
+  .navigation-bar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .navigation-bar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
 }
