@@ -6,7 +6,7 @@ import {title, landingLinks, links} from "./nav-links-and-titles-page";
 
 import "./landing-page.css";
 
-export function LandingPage(props) {
+export function LogoutPage(props) {
   return (
     <div className="home">
 		<h2>Landing</h2>

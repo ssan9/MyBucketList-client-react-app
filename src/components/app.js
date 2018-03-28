@@ -4,7 +4,7 @@ import { Route, withRouter } from "react-router-dom";
 
 import NavigationBar from "./pages/reusable-components/navigation-bar";
 import LandingPage from "./pages/landing-page/landing-page";
-import LoginPage from "./pages/login-page";
+import LoginPage from "./pages/login-page/login-page";
 import SignupPage from "./pages/signup-page/signup-page";
 import CreateItemPage from "./pages/create-item-page/create-item-page";
 import GoalsPage from "./pages/goals-page/goals-page";

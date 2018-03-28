@@ -10,7 +10,7 @@ import { putGoal } from "../../../actions/index";
 
 
 //why not this.props.goal
-
+//how does computer know what does check mean?
 export class TodoGoals extends React.Component {
   toggleChecked(goal) {
     goal.checked = !goal.checked;
@@ -62,5 +62,3 @@ export class TodoGoals extends React.Component {
 const mapStateToProps = state => ({
   loggedIn: state.auth.currentUser !== null
 });
-
-export default connect(mapStateToProps)(TodoGoals);

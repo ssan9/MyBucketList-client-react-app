@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { getGoals } from "../../../actions/index";
-import ToDoGoals from "./todo-goals";
+import {TodoGoals} from "./todo-goals";
 // import CompletedGoals from "./completed-goals";
 import { Footer } from "../reusable-components/footer";
 
@@ -12,15 +12,15 @@ export class GoalsPage extends React.Component {
   componentDidMount() {
     this.props.dispatch(getGoals());
   }
-
+//from where did it get goals? //are we sending the goals to TodoGoals?
   render() {
     let toDoGoals = this.props.goals.filter(goal => !goal.checked);
     let completedGoals = this.props.goals.filter(goal => goal.checked);
 
     return (
       <div className="goals">
-        <ToDoGoals goals={toDoGoals} title="Not Completed" />
-        <ToDoGoals goals={completedGoals} title="Completed" />
+        <TodoGoals goals={toDoGoals} title="Not Completed" /> 
+        <TodoGoals goals={completedGoals} title="Completed" />
         <Footer />
       </div>
     );
