@@ -30,7 +30,7 @@ describe('goalReducer', () => {
 				goals: []
 			};
 			state = goalReducer(state, goalsError(error));
-			expect(state.goals).toEqual('');
+			expect(state.goals).toEqual('asd'); 
 		})
 	})
 });
