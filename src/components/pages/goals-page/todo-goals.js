@@ -11,7 +11,7 @@ import { putGoal } from "../../../actions/index";
 
 //why not this.props.goal
 //how does computer know what does check mean?
-export class TodoGoals extends React.Component {
+export default class TodoGoals extends React.Component {
   toggleChecked(goal) {
     goal.checked = !goal.checked;
     this.props.dispatch(putGoal(goal));

@@ -1,11 +1,11 @@
 import React from 'react';
 import {shallow, mount} from 'enzyme';
 
-import TableButtons from "./table-buttons";
+import {TableButtons} from "./table-buttons";
 //is redirect code correct?
-describe('TableButtons />' () => {
+describe('TableButtons />', () => {
 	it('Renders without crashing', () => {
-		shallow(<TableButtons /);
+		shallow(<TableButtons />);
 	});
 
 	it('Should redirect to a new page when edit button is clicked', () => {

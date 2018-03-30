@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { deleteGoal } from "../../../actions/index";
 // import FacebookShareButton from "./fb-share-button";
 // import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import TestComponent from "./social-buttons";
+// import TestComponent from "./social-buttons";
 
 import "./table-buttons.css";
 // import { Link, Redirect } from "react-router-dom";
@@ -35,7 +35,6 @@ export function TableButtons(props) {
         {" "}
         <button className="edit action-buttons">Edit</button>
       </Link>
-      <button className="share action-buttons"> <TestComponent /></button>
       <button 
         className="delete action-buttons"
         onClick={() => props.dispatch(deleteGoal(props.goal.id))}
