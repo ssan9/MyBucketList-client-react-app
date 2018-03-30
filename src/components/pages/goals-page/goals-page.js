@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { getGoals } from "../../../actions/index";
-import {TodoGoals} from "./todo-goals";
+import TodoGoals from "./todo-goals";
 // import CompletedGoals from "./completed-goals";
 import { Footer } from "../reusable-components/footer";
 
