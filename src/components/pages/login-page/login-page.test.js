@@ -1,10 +1,10 @@
 import React from "react";
 import {shallow} from 'enzyme';
 
-import {Options} from "./options";
+import {LoginPage} from "./login-page"
 
-describe('<Options />', () => {
+describe('<LoginPage />', () => {
 	it('Renders without crashing', () => {
-		shallow(<Options />);
+		shallow(<LoginPage />);
 	});
 });

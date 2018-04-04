@@ -10,13 +10,12 @@ import { putGoal } from "../../../actions/index";
 export class EditPage extends React.Component {
   constructor(props) {
     super(props);
-     console.log(props);
-
+    console.log(props);
   }
   onSubmit(event) {
     console.log(this, "this");
     console.log(this.props, "props");
-    
+
     // console.log(match);
     event.preventDefault();
     let goal = {
@@ -55,8 +54,14 @@ export class EditPage extends React.Component {
               defaultValue={this.props.match.params.description || ''} 
               required
             />
-            <select name="category" ref="category" id="category" aria-label="category" className="create-goal" required>
-                <option value="0" defaultValue={this.props.match.params.created || ''}>Category</option>
+            <select name="category" 
+              ref="category" 
+              id="category"
+              aria-label="category" 
+              className="create-goal"
+              defaultValue={this.props.match.params.category || ''} 
+              required>
+                <option value="0">Category</option>
                 <option value="Sports">Sports</option>
                 <option value="Events">Events</option>
                 <option value="Hobbies">Hobbies</option>

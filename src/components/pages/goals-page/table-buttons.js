@@ -10,7 +10,7 @@ import { deleteGoal } from "../../../actions/index";
 
 import "./table-buttons.css";
 // import { Link, Redirect } from "react-router-dom";
-
+// why do we have {""} in return?
 export function TableButtons(props) {
   console.log(props);
   
@@ -20,18 +20,16 @@ export function TableButtons(props) {
   const currentGoal = {
     id: props.goal.id,
     description: props.goal.description,
+    category: props.goal.category,
     created: props.goal.created,
     due: props.goal.due
   };
-  // props.initialize(currentGoal);
+  // props.initialize(currentGoal);`
 
   return (
     <div className="table-buttons">
       <Link
-        to={`/edit/${currentGoal.id}/${currentGoal.description}/${
-          currentGoal.due
-        }`}
-      >
+        to={`/edit/${currentGoal.id}/${currentGoal.description}/${currentGoal.category}/${currentGoal.due}`}>
         {" "}
         <button className="edit action-buttons">Edit</button>
       </Link>

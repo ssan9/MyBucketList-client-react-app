@@ -2,9 +2,9 @@ import React from "react";
 import { connect } from "react-redux";
 // import { Link, Redirect } from "react-router-dom";
 
-import {title, landingLinks, links} from "./nav-links-and-titles-page";
+// import {title, landingLinks, links} from "./nav-links-and-titles-page";
 
-import "./landing-page.css";
+// import "./logout-page.css";
 
 export function LogoutPage(props) {
   return (
@@ -18,4 +18,4 @@ const mapStateToProps = state => ({
   loggedIn: state.auth.currentUser !== null
 });
 
-export default connect(mapStateToProps)(LandingPage);
+export default connect(mapStateToProps)(LogoutPage);

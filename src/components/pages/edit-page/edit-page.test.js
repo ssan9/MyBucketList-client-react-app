@@ -5,7 +5,7 @@ import {EditPage} from "./edit-page";
 
 describe('<EditPage />', () => {
 	it('Renders without crashing', () => {
-		shallow(<EditPage />);
+		shallow(<EditPage match={{params: {description: ""}}} />);
 	});
 
 	// it('Should dispatch putGoal when the form is submitted', () => {

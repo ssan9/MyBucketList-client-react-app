@@ -1,11 +1,11 @@
 import React from 'react';
 import {shallow, mount} from 'enzyme';
 
-import GoalsPage from "./goals-page";
+import {GoalsPage} from "./goals-page";
 //how to write test for checked and unchecked goals?
 describe('<GoalsPage />', () => {
 	it('Renders without crashing', () => {
-		shallow(<GoalsPage />);
+		shallow(<GoalsPage goals={[]} dispatch={() => {}} />);
 	});
 
 	// it('Should dispatch getGoals when the page is loaded', () => {
