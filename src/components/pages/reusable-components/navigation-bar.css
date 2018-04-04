@@ -14,6 +14,9 @@
   left: 1%;
   top: -8px;
   z-index: 1;
+font-family: 'Berkshire Swash', cursive;
+
+
 }
 
 #app-name a {
@@ -31,6 +34,7 @@
 
 .nav-bar ul li {
   display: inline-block;
+  font-family: 'Marmelad', sans-serif;
 }
 
 .nav-bar ul li a {
