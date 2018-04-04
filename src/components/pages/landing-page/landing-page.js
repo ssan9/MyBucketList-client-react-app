@@ -18,7 +18,7 @@ export function LandingPage(props) {
       <div className="bucketlist-image">
         <div className="landing-title">
           <h2 className="dream-title">
-            Hey, Create a BucketList, Fulfill Your Dreams...
+            Create a BucketList, Fulfill Your Dreams...
           </h2>
         </div>
         <div className="tab-group">
