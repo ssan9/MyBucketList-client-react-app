@@ -9,10 +9,7 @@ import { Footer } from "../reusable-components/footer";
 import "./goals-page.css";
 //why this.props.goal and not just goals like in todo-goals
 export class GoalsPage extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  componentDidMount() {
+   componentDidMount() {
     this.props.dispatch(getGoals());
   }
 //from where did it get goals? //are we sending the goals to TodoGoals?

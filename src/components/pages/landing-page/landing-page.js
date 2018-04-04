@@ -13,9 +13,6 @@ import "../reusable-components/float-grid.css";
 import "./landing-page.css";
 
 export function LandingPage(props) {
-  <style>
-@import url('https://fonts.googleapis.com/css?family=Marmelad');
-</style>
   return (
     <div className="landing-page">
       <div className="bucketlist-image">
