@@ -14,7 +14,7 @@ language: node_js
 
  deploy:
    provider: script
-   script: netlify deploy -s 3d0ec54e-ed21-47d6-bd79-8096f8b17990 -t 0f9ccfb2abcbcb9ad532ae46d96721b077cf50b32b0fa9d0da5c11a7ec92879d -p ./build
+   script: netlify deploy -s $NETLIFY_SITE_ID -t $NETLIFY_ACCESS_TOKEN -p ./build
    skip_cleanup: true
    on:
      branch: master
