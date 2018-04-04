@@ -5,7 +5,6 @@ import { API_BASE_URL } from "../config";
 // or clear/share
 
 export const getGoals = () => (dispatch, getState) => {
-  console.log("getGoals");
   const authToken = getState().auth.authToken;
   return fetch(`${API_BASE_URL}/goals`, {
     method: "GET",
@@ -107,9 +106,8 @@ export const deleteGoal = goalId => (dispatch, getState) => {
 // });
 
 export const CLEAR_GOAL_FORM = "CLEAR_GOAL_FORM";
-export const clearGoalForm = goal => ({
-  type: CLEAR_GOAL_FORM,
-  goal
+export const clearGoalForm = () => ({
+  type: CLEAR_GOAL_FORM
 });
 
 export const SHARE_GOALS = "SHARE_GOALS";
