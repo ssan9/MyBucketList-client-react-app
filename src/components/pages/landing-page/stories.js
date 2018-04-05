@@ -15,8 +15,12 @@ export class Stories extends React.Component {
 	componentDidMount() {	//live
 		setInterval(() => {
 			if(this.state.currentStory===0) {
-				this.setState({currentStory:1})
-			}else{this.setState({currentStory:0})}
+				this.setState(
+					{currentStory:1}
+				)
+			}else{this.setState(
+					{currentStory:0})
+				 }
 		}, 10000
 	)}
 	render() {
