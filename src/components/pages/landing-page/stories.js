@@ -28,7 +28,7 @@ export class Stories extends React.Component {
 					<h4 className="user-info">John, 34-New York</h4>
 				</div>}
 				{currentStory===1 && <div className="story one">
-					<p className="user-story">"I have always dreamed of learning salsa with my partner but kept procrastinating it for some or the other reason. But after creating the Bucket list I became so motivated that within a week's time of creating this list, I got us enrolled for salsa classes. I am in seventh heaven now as I'm immensely enjoying these classes."</p>
+					<p className="user-story">"I have always dreamed of learning salsa with my partner but kept procrastinating it for some or the other reason. But after creating the Bucket list I became so motivated that within a week's time of creating this list, I got us enrolled for salsa lessons. I am in seventh heaven now as I'm immensely enjoying these classes."</p>
 					<h4 className="user-info">Rose, 48-California</h4>
 				</div>}
 			</div>
