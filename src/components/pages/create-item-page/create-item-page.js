@@ -30,6 +30,7 @@ export class CreateItemPage extends React.Component {
         <h2 className="title">Create Your Goal!</h2>
         <form className="goal-creation-form" onSubmit={e => this.onSubmit(e)}>
           <div className="fields">
+          <label for="description">Description</label>
             <input
               type="text"
               name="description"
@@ -37,9 +38,10 @@ export class CreateItemPage extends React.Component {
               id="description"
               className="create-goal"
               aria-labelledby="Describe Your Goal!"
-              placeholder="Description"
               required
             />
+            <label for="category">Category</label>
+
             <select
               name="category"
               ref="category"
@@ -48,7 +50,7 @@ export class CreateItemPage extends React.Component {
               className="create-goal"
               required
             >
-              <option value="0">Category</option>
+              <option value="0"></option>
               <option value="Sports">Sports</option>
               <option value="Events">Events</option>
               <option value="Hobbies">Hobbies</option>
@@ -59,6 +61,8 @@ export class CreateItemPage extends React.Component {
               </option>
               <option value="Other">Other</option>
             </select>
+            <label for="due-date">Due Date</label>
+
             <input
               type="date"
               name="due-date"

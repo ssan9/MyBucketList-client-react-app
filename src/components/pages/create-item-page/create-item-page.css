@@ -27,6 +27,10 @@
   padding-left: 13px;
 }
 
+label {
+    color: #1076B0;
+    font-size: 20px;
+}
 .create-goal::placeholder {
   color: #1076B0;
 }

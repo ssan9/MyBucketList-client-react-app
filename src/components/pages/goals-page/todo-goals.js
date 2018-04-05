@@ -19,7 +19,9 @@ export class TodoGoals extends React.Component {
 
   render() {
     let goals = this.props.goals.map((goal, index) => (
+
       <tr key={index}>
+       
         <td onClick={() => this.toggleChecked(goal)}>
           {goal.checked ? <span className="checkbox">&#x2612;</span> : <span className="checkbox">&#x25a2;</span>}
         </td>
@@ -29,23 +31,25 @@ export class TodoGoals extends React.Component {
         <td>{goal.created}</td>
         <td>{goal.due}</td>
         <td>
-          <TableButtons goal={goal} />
+            <TableButtons goal={goal} />
         </td>
       </tr>
+                
     ));
+    
     return (
       <div className="todo-goals">
-        <h2 className="title">Yay! View Your Goals!</h2>
+        <h2 className="title">{this.props.title}</h2>
         <div className="todo-completed">
-          <h3 className="heading">{this.props.title}</h3>
+          <h3 className="heading">{this.props.heading}</h3>
           <div className="lists">
             <table>
               <thead className="header">
                 <tr>
-                  <th>Checked</th>
+                  <th>{this.props.header}</th>
                   <th>Description</th>
                   <th>Category</th>
-                  <th>Created</th>
+                  <th>{this.props.date}</th>
                   <th>Due</th>
                   <th />
                 </tr>

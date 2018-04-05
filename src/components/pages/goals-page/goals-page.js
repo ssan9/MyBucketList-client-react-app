@@ -19,8 +19,8 @@ export class GoalsPage extends React.Component {
 
     return (
       <div className="goals">
-        <TodoGoals goals={toDoGoals} title="Not Completed" /> 
-        <TodoGoals goals={completedGoals} title="Completed" />
+        <TodoGoals goals={toDoGoals} title="Yay! View Your ToDo Goals" heading="Not Completed" header="Unchecked" date="Created" /> 
+        <TodoGoals goals={completedGoals} title="Hurray! View Your Completed Goals" heading="Completed" header="Checked" date="Completed" />
         <Footer />
       </div>
     );
