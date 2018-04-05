@@ -17,7 +17,7 @@ export class Stories extends React.Component {
 			if(this.state.currentStory===0) {
 				this.setState({currentStory:1})
 			}else{this.setState({currentStory:0})}
-		}, 2000
+		}, 10000
 	)}
 	render() {
 		const currentStory = this.state.currentStory;
