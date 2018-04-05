@@ -22,6 +22,11 @@ export class LoginForm extends React.Component {
         }
         return (
             <div className="form-login">
+                <div className="demo-login">
+                    <h2>Demo login:</h2>
+                    <h3> Username: qwer</h3>
+                    <h3> Password: zxcv</h3>
+                </div>
             <form
                 className="login-form"
                 onSubmit={this.props.handleSubmit(values =>
@@ -54,7 +59,8 @@ export class LoginForm extends React.Component {
             
                 </div>
             </form>
-            </div>
+            
+        </div>
         );
     }
 }

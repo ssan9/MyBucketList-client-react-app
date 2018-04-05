@@ -6,13 +6,13 @@ import "../reusable-components/float-grid.css";
 
 
 export class Stories extends React.Component {
-	constructor(props) {		//hypothetical
+	constructor(props) {		
 		super(props);
 		this.state = {
 			currentStory: 0,
 		}
 	}
-	componentDidMount() {	//live
+	componentDidMount() {	
 		setInterval(() => {
 			if(this.state.currentStory===0) {
 				this.setState(
