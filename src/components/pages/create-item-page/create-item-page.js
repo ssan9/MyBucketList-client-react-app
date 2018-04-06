@@ -46,6 +46,7 @@ export class CreateItemPage extends React.Component {
               name="category"
               ref="category"
               id="category"
+              placeholder="category"
               aria-label="category"
               className="create-goal"
               required
@@ -72,6 +73,7 @@ export class CreateItemPage extends React.Component {
               aria-labelledby="Due Date"
               placeholder="Due Date"
               required
+
             />
             <div className="form-submit">
               <button
