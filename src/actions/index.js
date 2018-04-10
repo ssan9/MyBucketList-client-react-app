@@ -91,9 +91,10 @@ export const deleteGoal = goalId => (dispatch, getState) => {
       "Content-Type": "application/json"
     }
   })
-    .then(res => res.json())
+    // .then(res => res.json())
     .then(goal => dispatch(getGoals(goal)))
-    //  .then(goal => dispatch(deleteGoalSuccess(goal)))
+    
+     // .then(goal => dispatch(deleteGoalSuccess(goal)))
     .catch(err => {
       dispatch(goalsError(err));
     });
