@@ -10,10 +10,15 @@ import "./goals-page.css";
 //why this.props.goal and not just goals like in todo-goals
 export class GoalsPage extends React.Component {
    componentDidMount() {
+    console.log(this.props);
+
     this.props.dispatch(getGoals());
   }
-//from where did it get goals? //are we sending the goals to TodoGoals?
+
+//from where did it get goals? are we getting them from dispatch? //are we sending the goals to TodoGoals?
   render() {
+    console.log(this.props);
+
     let toDoGoals = this.props.goals.filter(goal => !goal.checked);
     let completedGoals = this.props.goals.filter(goal => goal.checked);
 

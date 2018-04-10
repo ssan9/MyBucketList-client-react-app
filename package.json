@@ -17,6 +17,7 @@
     "react-social-buttons": "^1.0.8",
     "react-test-renderer": "^16.3.0",
     "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.2",
     "redux-form": "^7.3.0",
     "redux-thunk": "^2.2.0",
     "validator": "^7.0.0"

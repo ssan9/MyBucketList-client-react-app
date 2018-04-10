@@ -1,10 +1,3 @@
-export const title = [
-  {
-    text: "MyBucketList",
-    href: "/"
-  }
-]
-
 export const landingLinks = [
   {
     text: "Signup",

@@ -10,7 +10,9 @@ export default function NavigationBar(props) {
   const linkElements = displayLinks.map((link, index) => {
     return (
       <li key={index}>
-        <Link to={link.href}>{link.text}</Link>
+        <Link to={link.href}>
+          {link.text}
+        </Link>
       </li>
     );
   });
@@ -25,7 +27,9 @@ export default function NavigationBar(props) {
         <span className="navicon" />
       </label>
       <div className="nav-bar">
-        <ul className="nav-bar-ul">{linkElements}</ul>
+        <ul className="nav-bar-ul">
+          {linkElements}
+        </ul>
       </div>
     </nav>
   );

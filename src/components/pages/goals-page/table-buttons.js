@@ -33,7 +33,8 @@ export function TableButtons(props) {
         {" "}
         <button className="edit action-buttons">Edit</button>
       </Link>
-        <button className="share action-buttons"><a target="_blank" rel="noreferrer noopener" href="http://www.facebook.com/sharer/sharer.php">Share</a></button>
+        <button className="share action-buttons"><img src = "share_button.png" id = "share_button"/><a target="_blank" rel="noreferrer noopener" href="http://www.facebook.com/sharer/sharer.php">
+Share</a></button>
 
       <button 
         className="delete action-buttons"
