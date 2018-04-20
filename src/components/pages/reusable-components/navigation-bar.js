@@ -5,7 +5,9 @@ import "./navigation-bar.css";
 import { landingLinks, links } from "./nav-links-data"; //title was also there as the first component
 import {clearAuth} from "../../../actions/auth";
 import {clearAuthToken} from "../../../local-storage";
-export default function NavigationBar(props) {
+import { connect } from "react-redux";
+
+export function NavigationBar(props) {
   let displayLinks = props.loggedIn ? links : landingLinks;
 
   const linkElements = displayLinks.map((link, index) => {
@@ -49,3 +51,4 @@ export default function NavigationBar(props) {
   );
 }
 
+export default connect()(NavigationBar);

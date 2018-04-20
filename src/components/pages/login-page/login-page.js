@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom"; //Redirect was also there with Link after a comma
 import LoginForm from "../../login-form.js";
 import {BrowserRouter as Router} from "react-router-dom";
-// import { Link, Redirect } from "react-router-dom";
 import { Field, reduxForm, focus } from "redux-form";
 import { registerUser } from "../../../actions/users";
 import { login } from "../../../actions/auth";
@@ -27,15 +26,19 @@ export class LoginPage extends React.Component {
     // print the form values to the console
     console.log(values)
     const { username, password } = values;
+    this.props.dispatch(login(username, password));
+    return this.props.history.push('goals');
+
 }
 
  render() {
   return (
     <div className="login">
       <h2 className="title">Login</h2>
-      <LoginForm onSubmit={this.submit} />
-      
-      <Link to="/register">Register</Link>
+      <LoginForm onSubmit={this.submit}
+       />
+      <Link to="/signup">Signup</Link>
+
     </div>
   );
  }

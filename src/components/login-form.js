@@ -21,14 +21,14 @@ import {required, nonEmpty} from '../validators';
     //     }
 
     // disabled={this.props.pristine || this.props.submitting} where to add it?
-let LoginForm = props => {
+    export function LoginForm(props) {
   const { handleSubmit } = props
         return (
             <div className="form-login">
                 <div className="demo-login">
                     <h2>Demo login:</h2>
-                    <h3> Username: qwer</h3>
-                    <h3> Password: zxcv</h3>
+                    <h3> Username: uiop</h3>
+                    <h3> Password: qwertyuiop</h3>
                 </div>
             <form onSubmit={handleSubmit} 
                 className="login-form">
@@ -64,6 +64,7 @@ let LoginForm = props => {
         </div>
         );
     }
+
 
 
 export default reduxForm({

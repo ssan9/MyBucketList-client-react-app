@@ -1,7 +1,8 @@
 import React from 'react'
-import { Field, reduxForm } from 'redux-form'
+import { Field, reduxForm, focus } from 'redux-form'
+import Input from "../../input";
 
-let SignupForm = props => {
+export function SignupForm(props) {
   const { handleSubmit } = props
   return (
   	<div>
@@ -10,7 +11,7 @@ let SignupForm = props => {
 	      <div className="fields">
 	        <Field 
 	        	name="firstName" 
-	        	component="input" 
+	        	component="input"
 	        	type="text"
 	        	id="firstName"
 	        	className="name register"
@@ -23,7 +24,7 @@ let SignupForm = props => {
 	      <div className="fields">
 	        <Field 
 	        	name="lastName" 
-	        	component="input" 
+	        	component="input"
 	        	type="text"
 	        	id="lastName"
 	        	className="name register"
@@ -37,7 +38,7 @@ let SignupForm = props => {
 	      <div className="fields">
 	        <Field 
 	        	name="username" 
-	        	component="input" 
+	        	component="input"
 	        	type="text"
 	        	id="username"
 	        	className="register"
@@ -50,7 +51,7 @@ let SignupForm = props => {
 	      <div className="fields">
 	        <Field 
 	        	name="email" 
-	        	component="input" 
+	        	component="input"
 	        	type="email"
 	        	id="email" 
 	        	className="register auth"
@@ -63,7 +64,7 @@ let SignupForm = props => {
 	      <div className="fields">
 	        <Field 
 	        	name="password" 
-	        	component="input" 
+	        	component="input"
 	        	type="text"
 	        	id="password"
 	        	className="register auth"
@@ -84,10 +85,16 @@ let SignupForm = props => {
   )
 }
 
-SignupForm = reduxForm({
-  // a unique name for the form
-  form: 'signup'
-})(SignupForm)
+export default reduxForm({
+  form: "signup",
+  onSubmitFail: (errors, dispatch) =>
+    dispatch(focus("signup", Object.keys(errors)[0]))
+})(SignupForm);
 
-export default SignupForm
+// SignupForm = reduxForm({
+//   // a unique name for the form
+//   form: 'signup'
+// })(SignupForm)
+
+// export default SignupForm
 

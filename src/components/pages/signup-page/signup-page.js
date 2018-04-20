@@ -5,7 +5,7 @@ import {BrowserRouter as Router} from "react-router-dom";
 import { Field, reduxForm, focus } from "redux-form";
 import { registerUser } from "../../../actions/users";
 import { login } from "../../../actions/auth";
-import Input from "../../input";
+// import Input from "../../input";
 import SignupForm from "./signup-form";
 import {
   required,
@@ -27,8 +27,8 @@ export class SignupPage extends React.Component {
     // const user = { username, password, firstName, lastName };
     this.props
       .dispatch(registerUser(values))
-      .then(() => this.props.dispatch(login(username, password)));  
-    return this.props.history.push('/view');
+      // .then(() => this.props.dispatch(login(username, password)));  
+    return this.props.history.push('/goals');
   }
 
   render() {

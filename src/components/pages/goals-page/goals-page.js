@@ -2,6 +2,8 @@ import React from "react";
 import { connect } from "react-redux";
 import { getGoals } from "../../../actions/index";
 import TodoGoals from "./todo-goals";
+import requiresLogin from '../../requires-login';
+
 // import CompletedGoals from "./completed-goals";
 import { Footer } from "../reusable-components/footer";
 
@@ -37,4 +39,4 @@ const mapStateToProps = state => ({
   goals: state.data.goals
 });
 
-export default connect(mapStateToProps)(GoalsPage);
+export default requiresLogin()(connect(mapStateToProps)(GoalsPage));
