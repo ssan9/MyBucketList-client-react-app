@@ -3,20 +3,32 @@ import React from "react";
 import { Link } from "react-router-dom"; //Redirect was also there after comma
 import "./navigation-bar.css";
 import { landingLinks, links } from "./nav-links-data"; //title was also there as the first component
-
+import {clearAuth} from "../../../actions/auth";
+import {clearAuthToken} from "../../../local-storage";
 export default function NavigationBar(props) {
   let displayLinks = props.loggedIn ? links : landingLinks;
 
   const linkElements = displayLinks.map((link, index) => {
+     
     return (
       <li key={index}>
         <Link to={link.href}>
           {link.text}
         </Link>
+
       </li>
     );
   });
-
+  function logOut() {
+        props.dispatch(clearAuth());
+        clearAuthToken();
+    }
+  let logOutButton;
+        if (props.loggedIn) {
+            logOutButton = (
+                <button className="logout" onClick={() => logOut()}>Log out</button>
+            );
+        }
   return (
     <nav className="navigation-bar">
       <h1 className="current" id="app-name">
@@ -29,7 +41,9 @@ export default function NavigationBar(props) {
       <div className="nav-bar">
         <ul className="nav-bar-ul">
           {linkElements}
+          {logOutButton}
         </ul>
+
       </div>
     </nav>
   );

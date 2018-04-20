@@ -10,6 +10,11 @@ button.edit{
 
 button.share{
   background-color: #1076B0;
+  display: inline-block;
+}
+
+button.share a{
+  text-decoration: none;
 }
 
 button.delete{

@@ -5,21 +5,24 @@ import "./login-form.css";
 import {login} from '../actions/auth';
 import {required, nonEmpty} from '../validators';
 
-export class LoginForm extends React.Component {
-    onSubmit(values) {
-        console.log("hi");
-        return this.props.dispatch(login(values.username, values.password));
-    }
+    // onSubmit(values) {
+    //     console.log("hi");
+    //     return this.props.dispatch(login(values.username, values.password));
+    // }
 
-    render() {
-        let error;
-        if (this.props.error) {
-            error = (
-                <div className="form-error" aria-live="polite">
-                    {this.props.error}
-                </div>
-            );
-        }
+    // render() {
+    //     let error;
+    //     if (this.props.error) {
+    //         error = (
+    //             <div className="form-error" aria-live="polite">
+    //                 {this.props.error}
+    //             </div>
+    //         );
+    //     }
+
+    // disabled={this.props.pristine || this.props.submitting} where to add it?
+let LoginForm = props => {
+  const { handleSubmit } = props
         return (
             <div className="form-login">
                 <div className="demo-login">
@@ -27,43 +30,41 @@ export class LoginForm extends React.Component {
                     <h3> Username: qwer</h3>
                     <h3> Password: zxcv</h3>
                 </div>
-            <form
-                className="login-form"
-                onSubmit={this.props.handleSubmit(values =>
-                    this.onSubmit(values)
-                )}>
-                {error}
+            <form onSubmit={handleSubmit} 
+                className="login-form">
+
                 <div className="fields">
                 <Field
-                    component={Input}
+                    component="input"
                     type="text"
                     name="username"
-                    id="username"
+                    className="username user-login"
                     placeholder="Username"
                     validate={[required, nonEmpty]}
                 />
-                
+                </div>
+                <div className="fields">
+
                 <Field
-                    component={Input}
+                    component="input"
                     type="password"
                     className="credentials"
                     name="password"
-                    id="password"
+                    className="password user-login"
                     placeholder="Password"
                     validate={[required, nonEmpty]}
                 />
-
-                <button className="login-button" disabled={this.props.pristine || this.props.submitting}>
+                </div>
+                <button className="login-button">
                     Log in
                 </button>
             
-                </div>
             </form>
             
         </div>
         );
     }
-}
+
 
 export default reduxForm({
     form: 'login',

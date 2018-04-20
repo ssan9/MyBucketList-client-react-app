@@ -18,9 +18,9 @@ export const links = [
     text: "View Your Goals",
     href: "/goals"
   },
-  {
-    text: "Logout",
-    href: "/logout"
-  }
+  // {
+  //   text: "Logout",
+  //   href: "/logout"
+  // }
 ];
 

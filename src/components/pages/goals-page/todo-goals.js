@@ -23,13 +23,13 @@ export class TodoGoals extends React.Component {
       <tr key={index}>
        
         <td onClick={() => this.toggleChecked(goal)}>
-          {goal.checked ? <span className="checkbox">&#x2612;</span> : <span className="checkbox">&#x25a2;</span>}
+          {goal.checked ? <span className="checkbox" data-label="checked">&#x2612;</span> : <span className="checkbox" data-label="unchecked">&#x25a2;</span>}
         </td>
 
-        <td>{goal.description}</td>
-        <td>{goal.category}</td>
-        <td>{goal.created}</td>
-        <td>{goal.due}</td>
+        <td data-label="description">{goal.description}</td>
+        <td data-label="category">{goal.category}</td>
+        <td data-label="created">{goal.created}</td>
+        <td data-label="due">{goal.due}</td>
         <td>
             <TableButtons goal={goal} />
         </td>

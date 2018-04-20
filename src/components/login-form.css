@@ -17,4 +17,12 @@
   font-weight: 600;
 }
 
+.user-login {
+  font-size:22px;
+  width:100%;
+  border: 4px solid #1076B0;
+  color: #1076B0;
+  height: 60px;
+  padding-left: 13px;
+}
 

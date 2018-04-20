@@ -8,6 +8,15 @@
 	padding: 15px;
 }
 
+.title {
+	font-size: 25px;
+}
+
+.heading {
+	font-size: 25px;
+	padding: 0.5%;
+}
+
 td {
 	padding: 25px;
 }
