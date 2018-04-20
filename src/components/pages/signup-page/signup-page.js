@@ -27,7 +27,7 @@ export class SignupPage extends React.Component {
     // const user = { username, password, firstName, lastName };
     this.props
       .dispatch(registerUser(values))
-      // .then(() => this.props.dispatch(login(username, password)));  
+      .then(() => this.props.dispatch(login(username, password)));  
     return this.props.history.push('/goals');
   }
 
