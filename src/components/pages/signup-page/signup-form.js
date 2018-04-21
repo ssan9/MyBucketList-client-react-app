@@ -76,16 +76,29 @@ export function SignupForm(props) {
 	        	autoComplete="off"
 	        	aria-labelledby="Password"
 	        	placeholder="Password"
+	        	required
 	        	validate={[required, passwordLength, isTrimmed]}
 
 	        />
 	      </div>
+
+	     <br />
+	     <br />
+	     <br />
+	     <br />
+	     <br />
+
 
 	     <h4 className="terms">By Signing up you agree to the Terms and Conditions</h4>
 
 	      <button type="submit" className="create-account"  disabled={pristine || submitting}>
 	      	      	CREATE ACCOUNT
 	      </button>
+	      <br />
+	      <br />
+	      <br />
+	      <br />
+	      <br />
 	    </form>
    	</div>
   )
