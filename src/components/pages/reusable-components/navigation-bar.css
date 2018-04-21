@@ -12,8 +12,8 @@
 .logout {
   background-color: green;
   margin-right: 15px;
-  margin-top: 3px;
-  margin-bottom: 3px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #app-name {
@@ -39,7 +39,7 @@
 .nav-bar {
   margin: 0;
   position: relative;
-  top: 6px;
+  /*top: 6px;*/
   clear: both;
 }
 
@@ -91,7 +91,7 @@
 
   #app-name {
     font-size: 20px;
-    top: -3px; 
+    /*top: -3px; */
   }
 
   .navigation-bar .nav-bar ul {
@@ -210,3 +210,9 @@
     top: 0;
   }
 }
+
+/*@media only screen and (max-width: 1025px) {
+  #app-name {
+    top: 15px;
+  }
+}*/

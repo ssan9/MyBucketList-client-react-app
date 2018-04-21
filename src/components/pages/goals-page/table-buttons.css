@@ -25,6 +25,81 @@ button.delete{
   background-color: #155544;
 }
 
+
+@media only screen and (max-width: 1500px) {
+  .action-buttons {
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .share {
+    padding-top: 1px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .action-buttons {
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .share {
+    padding-top: 1px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+
+.action-buttons {
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .share {
+    padding-top: 1px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .action-buttons {
+    font-size: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .share {
+    padding-top: 1px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .action-buttons {
+    font-size: 10px;
+    padding: 5px 1px;
+  }
+
+  .share {
+    padding-top: 0;
+  }
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .action-buttons {
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .share {
+    padding-top: 1px;
+  }
+}
+
+
 @media only screen and (max-width: 910px) {
 	button.edit, button.share {
 		font-size: 18px;
@@ -42,5 +117,16 @@ button.delete{
        margin: 8px 3px;
        padding-top: 5px;
        padding-bottom: 5px;
+       font-size: 15px;
+  }
+
+  .share{
+    padding-top: 0;
+    padding-bottom: 5px;
+  }
+
+  .delete{
+    padding-top: 3px;
+    padding-bottom: 3px;
   }
 }

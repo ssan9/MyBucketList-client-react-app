@@ -2,19 +2,13 @@ import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom"; //Redirect was also there with Link after a comma
 import LoginForm from "../../login-form.js";
-import {BrowserRouter as Router} from "react-router-dom";
-import { Field, reduxForm, focus } from "redux-form";
-import { registerUser } from "../../../actions/users";
+// import {BrowserRouter as Router} from "react-router-dom";
+// import { Field, reduxForm, focus } from "redux-form";
+// import { registerUser } from "../../../actions/users";
 import { login } from "../../../actions/auth";
-import Input from "../../input";
+// import Input from "../../input";
 // import SignupForm from "./signup-form";
-import {
-  required,
-  nonEmpty,
-  matches,
-  length,
-  isTrimmed
-} from "../../../validators";
+
 
 import "./login-page.css";
 
@@ -37,7 +31,7 @@ export class LoginPage extends React.Component {
       <h2 className="title">Login</h2>
       <LoginForm onSubmit={this.submit}
        />
-      <Link to="/signup">Signup</Link>
+      <h1 className="signup-request">If new user,  <Link to="/signup" className="signup-link">Signup</Link></h1>
 
     </div>
   );

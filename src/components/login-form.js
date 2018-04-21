@@ -1,8 +1,9 @@
 import React from 'react';
 import {Field, reduxForm, focus} from 'redux-form';
-import Input from './input';
+// import Input from './input';
 import "./login-form.css";
-import {login} from '../actions/auth';
+
+// import {login} from '../actions/auth';
 import {required, nonEmpty} from '../validators';
 
     // onSubmit(values) {
@@ -22,7 +23,7 @@ import {required, nonEmpty} from '../validators';
 
     // disabled={this.props.pristine || this.props.submitting} where to add it?
     export function LoginForm(props) {
-  const { handleSubmit } = props
+  const { handleSubmit, pristine, submitting } = props
         return (
             <div className="form-login">
                 <div className="demo-login">
@@ -48,14 +49,13 @@ import {required, nonEmpty} from '../validators';
                 <Field
                     component="input"
                     type="password"
-                    className="credentials"
+                    className="credentials password user-login"
                     name="password"
-                    className="password user-login"
                     placeholder="Password"
                     validate={[required, nonEmpty]}
                 />
                 </div>
-                <button className="login-button">
+                <button className="login-button"  disabled={pristine || submitting}>
                     Log in
                 </button>
             

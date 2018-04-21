@@ -18,8 +18,9 @@ export class TodoGoals extends React.Component {
   }
 
   render() {
-    let goals = this.props.goals.map((goal, index) => (
+          console.log(this.props)
 
+    let goals = this.props.goals.map((goal, index) => (
       <tr key={index}>
        
         <td onClick={() => this.toggleChecked(goal)}>

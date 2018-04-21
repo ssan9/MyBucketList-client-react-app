@@ -1,9 +1,12 @@
 import React from 'react'
 import { Field, reduxForm, focus } from 'redux-form'
-import Input from "../../input";
+// import Input from "../../input";
+import { required, nonEmpty, length, isTrimmed } from "../../../validators";
+
+const passwordLength = length({ min: 10, max: 72 });
 
 export function SignupForm(props) {
-  const { handleSubmit } = props
+  const { handleSubmit, pristine, submitting } = props
   return (
   	<div>
 	    <form onSubmit={handleSubmit} className="register-form">
@@ -45,7 +48,9 @@ export function SignupForm(props) {
 	        	autoComplete="off"
 	        	aria-labelledby="Username"
 	        	placeholder="Username"
-	        	required 
+	        	validate={[required, nonEmpty, isTrimmed]}
+
+	        
 	        />
 	      </div>
 	      <div className="fields">
@@ -65,20 +70,21 @@ export function SignupForm(props) {
 	        <Field 
 	        	name="password" 
 	        	component="input"
-	        	type="text"
+	        	type="password"
 	        	id="password"
 	        	className="register auth"
 	        	autoComplete="off"
 	        	aria-labelledby="Password"
 	        	placeholder="Password"
-	        	required 
+	        	validate={[required, passwordLength, isTrimmed]}
+
 	        />
 	      </div>
 
 	     <h4 className="terms">By Signing up you agree to the Terms and Conditions</h4>
 
-	      <button type="submit" className="create-account">
-	      	CREATE ACCOUNT
+	      <button type="submit" className="create-account"  disabled={pristine || submitting}>
+	      	      	CREATE ACCOUNT
 	      </button>
 	    </form>
    	</div>
