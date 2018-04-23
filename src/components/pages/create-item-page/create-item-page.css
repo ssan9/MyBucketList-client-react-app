@@ -89,12 +89,12 @@ option:first-child{
     /*background-color: green;*/
   }
   .due-date label {
-    width: 200%;
+    /*width: 200%;*/
     background-color: yellow;
     display: block;
   }
   #due-date {
-    width: 100%;
+    width: 150%;
     background-color: purple;
   }
 
