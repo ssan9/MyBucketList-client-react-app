@@ -23,7 +23,6 @@ const renderField = ({ input, placeholder, type, meta: { touched, error } }) => 
                 className="login-form">
 
                 <div className="fields">
-                                {props.error_message}
 
                 <Field
                     component={renderField}
@@ -36,6 +35,7 @@ const renderField = ({ input, placeholder, type, meta: { touched, error } }) => 
                 />
                 </div>
                 <div className="fields">
+                    {props.error_message}
 
                 <Field
                     component={renderField}

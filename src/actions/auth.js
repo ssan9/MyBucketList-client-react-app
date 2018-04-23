@@ -1,3 +1,5 @@
+import { SubmissionError } from "redux-form";
+
 import jwtDecode from 'jwt-decode';
 // import {SubmissionError} from 'redux-form';
 
@@ -68,7 +70,7 @@ export const login = (username, password) => dispatch => {
                 // Could not authenticate, so return a SubmissionError for Redux
                 // Form
                 console.log(message);
-                return message;
+                throw new SubmissionError("asd");
             })
     );
 };
