@@ -23,8 +23,8 @@ export class TodoGoals extends React.Component {
     let goals = this.props.goals.map((goal, index) => (
       <tr key={index}>
        
-        <td onClick={() => this.toggleChecked(goal)}>
-          {goal.checked ? <span className="checkbox" data-label="checked">&#x2612;</span> : <span className="checkbox" data-label="unchecked">&#x25a2;</span>}
+        <td data-label={(goal.checked) ? "checked" :"unchecked"} onClick={() => this.toggleChecked(goal)}>
+          {goal.checked ? <span className="checkbox" >&#x2612;</span> : <span className="checkbox" >&#x25a2;</span>}
         </td>
 
         <td data-label="description">{goal.description}</td>

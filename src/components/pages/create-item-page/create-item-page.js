@@ -77,6 +77,10 @@ export class CreateItemPage extends React.Component {
 
             />
             <div className="form-submit">
+            <div className="buttons">
+            <button type="submit" className="save-button button" id="save">
+                Save
+              </button>
               <button
                 className="cancel-button button"
                 id="cancel"
@@ -84,9 +88,8 @@ export class CreateItemPage extends React.Component {
               >
                 Cancel
               </button>
-              <button type="submit" className="save-button button" id="save">
-                Save
-              </button>
+              
+              </div>
             </div>
           </div>
         </form>

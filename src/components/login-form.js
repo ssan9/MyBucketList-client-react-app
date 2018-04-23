@@ -1,9 +1,11 @@
 import React from 'react';
 import {Field, reduxForm, focus} from 'redux-form';
 // import Input from './input';
+import submit from './login-validator';
+
 import "./login-form.css";
 
-// import {login} from '../actions/auth';
+import {login} from '../actions/auth';
 import {required, nonEmpty} from '../validators';
 
     // onSubmit(values) {
@@ -22,36 +24,43 @@ import {required, nonEmpty} from '../validators';
     //     }
 
     // disabled={this.props.pristine || this.props.submitting} where to add it?
+    const renderField = ({ input, placeholder, type, meta: { touched, error } }) => (
+  
+    <div>
+      <input {...input} placeholder={placeholder} type={type} />
+      {touched && error && <span>{error}</span>}
+  </div>
+);
     export function LoginForm(props) {
   const { handleSubmit, pristine, submitting } = props
         return (
             <div className="form-login">
                 <div className="demo-login">
-                    <h2>Demo login:</h2>
-                    <h3> Username: uiop</h3>
-                    <h3> Password: qwertyuiop</h3>
+                    <h1>To try it out, log in with username "demo" and password "demoaccount"</h1>
                 </div>
             <form onSubmit={handleSubmit} 
                 className="login-form">
 
                 <div className="fields">
                 <Field
-                    component="input"
+                    component={renderField}
                     type="text"
                     name="username"
                     className="username user-login"
                     placeholder="Username"
+                    value="uiop"
                     validate={[required, nonEmpty]}
                 />
                 </div>
                 <div className="fields">
 
                 <Field
-                    component="input"
+                    component={renderField}
                     type="password"
                     className="credentials password user-login"
                     name="password"
                     placeholder="Password"
+                    value="qwertyuiop"
                     validate={[required, nonEmpty]}
                 />
                 </div>

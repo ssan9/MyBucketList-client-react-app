@@ -48,7 +48,7 @@ export class App extends React.Component {
   render() {
     return (
       <div className="app">
-        <NavigationBar loggedIn={true} />
+        <NavigationBar />
         <Route exact path="/" component={LandingPage} />
         <Route exact path="/login" component={LoginPage} />
         <Route exact path="/signup" component={SignupPage} />

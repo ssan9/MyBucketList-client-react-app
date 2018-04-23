@@ -33,12 +33,11 @@ export class SignupPage extends React.Component {
     );
   }
 }
-//
-// const mapStateToProps = state => ({
-//   loggedIn: state.auth.currentUser !== null
-// });
 
-// export default SignupPage;
+const mapStateToProps = state => ({
+  loggedIn: state.auth.currentUser !== null
+});
 
-//
-export default connect()(SignupPage);
+
+
+export default connect(mapStateToProps)(SignupPage);

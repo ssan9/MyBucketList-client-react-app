@@ -16,12 +16,12 @@ import "./login-page.css";
 // const matchesPassword = matches("password");
 
 export class LoginPage extends React.Component {
-	submit = values => {
+  submit = values => {
     // print the form values to the console
     console.log(values)
     const { username, password } = values;
     this.props.dispatch(login(username, password));
-    return this.props.history.push('goals');
+    return this.props.history.push('/goals');
 
 }
 

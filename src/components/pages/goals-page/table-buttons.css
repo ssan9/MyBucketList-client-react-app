@@ -17,6 +17,12 @@ button.share a{
   text-decoration: none;
 }
 
+#share_button{
+  width: 34%;
+  position: relative;
+  top: 10px;
+}
+
 button.delete{
   background-color: #a10b0b;
 }
@@ -26,16 +32,24 @@ button.delete{
 }
 
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1600px) {
   .action-buttons {
     font-size: 14px;
     padding-top: 5px;
     padding-bottom: 5px;
   }
 
-  .share {
-    padding-top: 1px;
-  }
+  #share_button {
+width: 37%;  
+top:17px;
+}
+}
+
+@media only screen and (max-width: 1500px) {
+#share_button {
+width: 41%; 
+/*top:12px;*/
+}
 }
 
 @media only screen and (max-width: 1400px) {
@@ -44,13 +58,13 @@ button.delete{
     padding-top: 5px;
     padding-bottom: 5px;
   }
-
-  .share {
-    padding-top: 1px;
-  }
+#share_button {
+width: 43%;  
+/*top:12px;*/
 }
+  }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1350px) {
 
 .action-buttons {
     font-size: 14px;
@@ -58,58 +72,80 @@ button.delete{
     padding-bottom: 5px;
   }
 
-  .share {
-    padding-top: 1px;
+  #share_button {
+width: 45%;  
+/*top:12px;*/
+}
+}
+
+@media only screen and (max-width: 1300px) {
+  .action-buttons {
+    /*font-size: 14px;*/
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+
+  #share_button {
+    width: 45%;  
+    top:14px;
   }
 }
 
 @media only screen and (max-width: 1200px) {
   .action-buttons {
-    font-size: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    /*font-size: 10px;*/
+    /*padding: 5px 1px;*/
   }
 
-  .share {
-    padding-top: 1px;
-  }
-}
-
-@media only screen and (max-width: 1100px) {
-  .action-buttons {
-    font-size: 10px;
-    padding: 5px 1px;
-  }
-
-  .share {
-    padding-top: 0;
+  #share_button {
+    width: 46%;  
+    top:13px;
   }
 }
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1150px) {
   .action-buttons {
     font-size: 14px;
     padding-top: 5px;
     padding-bottom: 5px;
   }
 
-  .share {
-    padding-top: 1px;
+  #share_button {
+    width: 46%;  
+    top:16px;
   }
 }
 
 
-@media only screen and (max-width: 910px) {
+@media only screen and (max-width: 1140px) {
 	button.edit, button.share {
-		font-size: 18px;
+		/*font-size: 18px;*/
 	}
+  #share_button {
+    width: 52%;  
+    top:15px;
+  }
 }
 
-@media only screen and (max-width: 850px) {
-	button.edit, button.share {
+@media only screen and (max-width: 1120px) {
+	button.edit{
 		font-size: 12px;
 	}
+  #share_button {
+    width: 44%;  
+    top:15px;
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  button.edit{
+    font-size: 12px;
+  }
+  #share_button {
+    width: 44%;  
+    top:15px;
+  }
 }
 
 @media only screen and (max-width: 730px) {

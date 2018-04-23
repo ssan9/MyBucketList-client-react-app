@@ -4,6 +4,8 @@ import { connect } from "react-redux";
 // import { browserHistory } from "react-router";
 import { Link } from "react-router-dom";
 import { deleteGoal } from "../../../actions/index";
+import "../images/facebook-share-button.png";
+
 // import FacebookShareButton from "./fb-share-button";
 // import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 // import TestComponent from "./social-buttons";
@@ -33,8 +35,8 @@ export function TableButtons(props) {
         {" "}
         <button className="edit action-buttons">Edit</button>
       </Link>
-        <button className="share action-buttons"><img src = "share_button.png" id = "share_button" alt=""/><a target="_blank" rel="noreferrer noopener" href="http://www.facebook.com/sharer/sharer.php">
-Share</a></button>
+        <img src = {require("../images/share-fb.jpg")} id = "share_button" class="action-buttons" alt="fb-share"/><a target="_blank" rel="noreferrer noopener" href="http://www.facebook.com/sharer/sharer.php">
+</a>
 
       <button 
         className="delete action-buttons"

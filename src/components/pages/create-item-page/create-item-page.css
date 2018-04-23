@@ -47,6 +47,10 @@ option:first-child{
 	margin:30px 0;
 }
 
+.buttons {
+  float: right;
+}
+
 .button {
   font-size: 0;
   display:inline-block;
@@ -55,14 +59,12 @@ option:first-child{
   height:40px;
   text-align: right;
   cursor:pointer;
-  float: right;
 }
 
 .cancel-button {
   background: #e05858;
   font-size:20px;
-  padding-left: 2%;
-  padding-right: 2%;
+  
 }
 
 .cancel-button:hover {
@@ -73,8 +75,7 @@ option:first-child{
   background: #83D895;
   color:white;
   font-size:20px;
-  padding-left: 3%;
-  padding-right: 3%;
+ 
 }
 
 .save-button:hover {
