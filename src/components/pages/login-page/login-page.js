@@ -16,20 +16,28 @@ import "./login-page.css";
 // const matchesPassword = matches("password");
 
 export class LoginPage extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      error: ""
+    };
+  }
+
   submit = values => {
     // print the form values to the console
     console.log(values)
     const { username, password } = values;
-    this.props.dispatch(login(username, password));
-    return this.props.history.push('/goals');
-
-}
+    this.props
+    .dispatch(login(username, password))
+    .then(() => this.props.history.push('/goals'))
+    .catch(err => this.setState({ error: "Incorrect username or password" }));
+};
 
  render() {
   return (
     <div className="login">
       <h2 className="title">Login</h2>
-      <LoginForm onSubmit={this.submit}
+      <LoginForm onSubmit={this.submit} error_message={this.state.error}
        />
       <h1 className="signup-request">If new user,  <Link to="/signup" className="signup-link">Signup</Link></h1>
 

@@ -35,13 +35,13 @@ import {required, nonEmpty} from '../validators';
   const { handleSubmit, submitting } = props
         return (
             <div className="form-login">
-                <div className="demo-login">
-                    <h1>To try it out, log in with username "demo" and password "demoaccount"</h1>
-                </div>
+
             <form onSubmit={handleSubmit} 
                 className="login-form">
 
                 <div className="fields">
+                                {props.error_message}
+
                 <Field
                     component={renderField}
                     type="text"
@@ -63,6 +63,11 @@ import {required, nonEmpty} from '../validators';
                     value="qwertyuiop"
                     validate={[required, nonEmpty]}
                 />
+
+                </div>
+                <div className="demo-login">
+                    <h1 className="try">Try it out!</h1>
+                    <h1>log in with username "demo" and password "demoaccount"</h1>
                 </div>
                 <button className="login-button"  disabled={submitting}>
                     Log in
