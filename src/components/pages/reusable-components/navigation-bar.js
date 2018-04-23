@@ -91,8 +91,8 @@ export function NavigationBar(props) {
       </label>
       <div className="nav-bar">
         <ul className="nav-bar-ul">
-        {linkElements}
-        {logOutButton}
+          {linkElements}
+          {logOutButton}
         </ul>
 
       </div>

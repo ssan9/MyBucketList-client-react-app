@@ -28,11 +28,11 @@ import {required, nonEmpty} from '../validators';
   
     <div>
       <input {...input} placeholder={placeholder} type={type} />
-      {touched && error && <span>{error}</span>}
+      {touched && error && <span className="warning-sign">{error}</span>}
   </div>
 );
     export function LoginForm(props) {
-  const { handleSubmit, pristine, submitting } = props
+  const { handleSubmit, submitting } = props
         return (
             <div className="form-login">
                 <div className="demo-login">
@@ -64,7 +64,7 @@ import {required, nonEmpty} from '../validators';
                     validate={[required, nonEmpty]}
                 />
                 </div>
-                <button className="login-button"  disabled={pristine || submitting}>
+                <button className="login-button"  disabled={submitting}>
                     Log in
                 </button>
             

@@ -18,7 +18,7 @@ const renderField = ({ input, placeholder, type, meta: { touched, error, warning
   
 )
 export function SignupForm(props) {
-  const { handleSubmit, submitting, pristine } = props
+  const { handleSubmit, submitting } = props
   return (
   	<div>
   	<div className="demo-login">
@@ -103,7 +103,7 @@ export function SignupForm(props) {
 
 	     <h4 className="terms">By Signing up you agree to the Terms and Conditions</h4>
 	    <br />
-	      <button type="submit" className="create-account"  disabled={pristine || submitting}>
+	      <button type="submit" className="create-account"  disabled={submitting}>
 	      	      	CREATE ACCOUNT
 	      </button>
 	    </form>

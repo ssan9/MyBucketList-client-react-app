@@ -33,13 +33,13 @@ export function TableButtons(props) {
       <Link
         to={`/edit/${currentGoal.id}/${currentGoal.description}/${currentGoal.category}/${currentGoal.due}`}>
         {" "}
-        <button className="edit action-buttons">Edit</button>
+        <button className="edit action-buttons correction-buttons">Edit</button>
       </Link>
-        <img src = {require("../images/share-fb.jpg")} id = "share_button" class="action-buttons" alt="fb-share"/><a target="_blank" rel="noreferrer noopener" href="http://www.facebook.com/sharer/sharer.php">
-</a>
+        <a target="_blank" rel="noreferrer noopener" href="http://www.facebook.com/sharer/sharer.php"><img src = {require("../images/share-fb.jpg")} id = "share_button" className="action-buttons" alt="fb-share"/></a>
+{/*<button className="share action buttons"><a target="_blank" rel="noreferrer noopener" href="http://www.facebook.com/sharer/sharer.php">Share</a></button>*/}
 
       <button 
-        className="delete action-buttons"
+        className="delete action-buttons correction-buttons"
         onClick={() => props.dispatch(deleteGoal(props.goal.id))}
       >
         Delete

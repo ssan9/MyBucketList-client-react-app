@@ -63,18 +63,12 @@ export const login = (username, password) => dispatch => {
             .catch(err => {
                 const {code} = err;
                 const message =
-                    code === 401
-                        ? 'Incorrect username or password'
-                        : 'Unable to login, please try again';
+                    'Incorrect username or password';
                 dispatch(authError(err));
                 // Could not authenticate, so return a SubmissionError for Redux
                 // Form
                 console.log(message);
-                return Promise.reject(
-                    new SubmissionError({
-                        _error: message
-                    })
-                );
+                return message;
             })
     );
 };

@@ -20,7 +20,8 @@ export class SignupPage extends React.Component {
     this.props
       .dispatch(registerUser(values))
       .then(() => this.props.dispatch(login(username, password)))
-      .then(() => this.props.history.push('/goals'));
+      // .catch(err => {const message = "Wrong"})
+      .then(() => this.props.history.push('/create'));
   }
 //  
   render() {

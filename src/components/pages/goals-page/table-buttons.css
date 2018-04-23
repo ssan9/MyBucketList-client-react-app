@@ -134,19 +134,82 @@ width: 45%;
 	}
   #share_button {
     width: 44%;  
-    top:15px;
   }
 }
 
-@media only screen and (max-width: 1120px) {
+@media only screen and (max-width: 1000px) {
   button.edit{
     font-size: 12px;
   }
   #share_button {
-    width: 44%;  
-    top:15px;
+    width: 48%;  
   }
 }
+
+@media only screen and (max-width: 950px) {
+  #share_button {
+    width: 52%; 
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .action-buttons {
+    font-size: 10px; 
+  }
+  button.edit {
+    width: 40%;
+  }
+   #share_button {
+    width: 53%; 
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #share_button {
+    width: 55%;  
+  }
+}
+
+/*@media only screen and (max-width: 850px) {
+  #share_button {
+    width: 65%;  
+  }
+}*/
+
+@media only screen and (max-width: 800px) {
+  #share_button {
+    width: 55%; 
+    /*top: 25px; */
+  }
+
+  button.edit{
+    width: 10%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  #share_button {
+    width: 55%; 
+    top: 14px; 
+  }
+  button.edit{
+    width: 35%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+}
+
+/*@media only screen and (max-width: 800px) {
+  #share_button {
+    width: 16%;  
+  }
+}*/
+
+/*@media only screen and (max-width: 750px) {
+  #share_button {
+    width: 18%;  
+  }
+}*/
 
 @media only screen and (max-width: 730px) {
     .action-buttons {
@@ -156,9 +219,15 @@ width: 45%;
        font-size: 15px;
   }
 
-  .share{
-    padding-top: 0;
+  #share_button{
+    width: 13%;  
+    top: 25px;
+  }
+
+  button.edit {
+    width: 10%;
     padding-bottom: 5px;
+    padding-top: 5px;
   }
 
   .delete{
@@ -166,3 +235,52 @@ width: 45%;
     padding-bottom: 3px;
   }
 }
+
+/*@media only screen and (max-width: 700px) {
+  #share_button {
+    width: 20%;
+    top: 24px;
+  }
+}*/
+
+@media only screen and (max-width: 650px) {
+  #share_button {
+    width: 14%;
+    top: 24px;
+  }
+  
+}
+
+@media only screen and (max-width: 600px) {
+  #share_button {
+    width: 14%;
+  }
+  button.edit {
+    width: 12%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+ #share_button {
+    width: 16%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+ #share_button {
+    width: 17%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+ #share_button {
+    width: 18%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+ #share_button {
+    width: 24%;
+  }
+}
+
