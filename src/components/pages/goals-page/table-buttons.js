@@ -35,8 +35,8 @@ export function TableButtons(props) {
         {" "}
         <button className="edit action-buttons correction-buttons">Edit</button>
       </Link>
-        <a target="_blank" rel="noreferrer noopener" href="http://www.facebook.com/sharer/sharer.php"><img src = {require("../images/share-fb.jpg")} id = "share_button" className="action-buttons" alt="fb-share"/></a>
-{/*<button className="share action buttons"><a target="_blank" rel="noreferrer noopener" href="http://www.facebook.com/sharer/sharer.php">Share</a></button>*/}
+        {/*<a target="_blank" rel="noreferrer noopener" href="http://www.facebook.com/sharer/sharer.php"><img src = {require("../images/share-fb.jpg")} id = "share_button" className="action-buttons" alt="fb-share"/></a>*/}
+<button className="share action buttons"><a target="_blank" rel="noreferrer noopener" href="http://www.facebook.com/sharer/sharer.php">Share</a></button>
 
       <button 
         className="delete action-buttons correction-buttons"

@@ -105,10 +105,16 @@ width: 45%;
 
 
 @media only screen and (max-width: 1150px) {
-  .action-buttons {
+  button.edit {
     font-size: 14px;
     padding-top: 5px;
     padding-bottom: 5px;
+  }
+
+  button.delete{
+    font-size: 14px;
+    padding-top: 4px;
+    padding-bottom: 4px;
   }
 
   #share_button {
@@ -194,8 +200,8 @@ width: 45%;
   }
   button.edit{
     width: 35%;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
 
