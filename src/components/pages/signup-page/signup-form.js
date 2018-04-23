@@ -6,6 +6,7 @@ import { Link } from "react-router-dom"; //Redirect was also there with Link aft
 // import Input from "../../input";
 import { required, nonEmpty, length, isTrimmed } from "../../../validators";
 import "./signup-form.css";
+
 const passwordLength = length({ min: 10, max: 72 });
 
 const renderField = ({
@@ -107,16 +108,11 @@ export function SignupForm(props) {
             validate={[required, passwordLength, isTrimmed]}
           />
         </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
 
         <h4 className="terms">
           By Signing up you agree to the Terms and Conditions
         </h4>
-        <br />
+      
         <button type="submit" className="create-account" disabled={submitting}>
           CREATE ACCOUNT
         </button>

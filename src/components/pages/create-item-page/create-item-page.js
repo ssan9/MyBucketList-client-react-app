@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import Footer from "../reusable-components/footer";
 
 import { postTodoGoal } from "../../../actions/index";
 import requiresLogin from '../../requires-login';
@@ -93,6 +94,7 @@ export class CreateItemPage extends React.Component {
             </div>
           </div>
         </form>
+        <Footer />
       </div>
     );
   }

@@ -8,25 +8,8 @@ import "./login-form.css";
 // import {login} from '../actions/auth';
 import {required, nonEmpty} from '../validators';
 
-    // onSubmit(values) {
-    //     console.log("hi");
-    //     return this.props.dispatch(login(values.username, values.password));
-    // }
-
-    // render() {
-    //     let error;
-    //     if (this.props.error) {
-    //         error = (
-    //             <div className="form-error" aria-live="polite">
-    //                 {this.props.error}
-    //             </div>
-    //         );
-    //     }
-
-    // disabled={this.props.pristine || this.props.submitting} where to add it?
-    const renderField = ({ input, placeholder, type, meta: { touched, error } }) => (
-  
-    <div>
+const renderField = ({ input, placeholder, type, meta: { touched, error } }) => (
+  <div>
       <input {...input} placeholder={placeholder} type={type} />
       {touched && error && <span className="warning-sign">{error}</span>}
   </div>

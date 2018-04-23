@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import "../reusable-components/float-grid.css";
 import "./options.css";
 
-import "../images/update-list.png";
+import "../images/update.png";
 import "../images/edit.png";
 import "../images/notepad.png";
 
@@ -43,12 +43,12 @@ export function Options(props) {
         </div>
 
         <div className="col-4">
-          <div className="share">
-            <div className="friends-share pic">
+          <div className="update-list">
+            <div className="update-list pic">
               <img
-                src={require("../images/update-list.png")}
+                src={require("../images/update.png")}
                 alt="Update your List"
-                className="options-image share-img"
+                className="options-image update-img"
               />
             </div>
             <div className="intro-part-three options-intro">
