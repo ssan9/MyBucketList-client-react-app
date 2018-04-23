@@ -88,6 +88,11 @@ option:first-child{
     background-color: green;
   }
 
+  #due-date {
+    width: 100%;
+    background-color: purple;
+  }
+
   .buttons {
     float: none;
     text-align: center;
