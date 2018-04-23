@@ -25,6 +25,7 @@
   color: #1076B0;
   height: 60px;
   padding-left: 13px;
+  background-color: pink;
 }
 
 label {
@@ -85,9 +86,13 @@ option:first-child{
 @media only screen and (max-width: 600px) {
   .due-date {
     width: 100%;
-    background-color: green;
+    /*background-color: green;*/
   }
-
+  .due-date label {
+    width: 200%;
+    background-color: yellow;
+    display: block;
+  }
   #due-date {
     width: 100%;
     background-color: purple;
