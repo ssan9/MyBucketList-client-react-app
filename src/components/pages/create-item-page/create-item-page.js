@@ -64,6 +64,7 @@ export class CreateItemPage extends React.Component {
               </option>
               <option value="Other">Other</option>
             </select>
+            <div className="due-date">
             <label htmlFor="due-date">Due Date</label>
 
             <input
@@ -77,6 +78,7 @@ export class CreateItemPage extends React.Component {
               required
 
             />
+            </div>
             <div className="form-submit">
             <div className="buttons">
             <button type="submit" className="save-button button" id="save">
