@@ -1,5 +1,5 @@
 import jwtDecode from 'jwt-decode';
-import {SubmissionError} from 'redux-form';
+// import {SubmissionError} from 'redux-form';
 
 import {API_BASE_URL} from '../config';
 import {normalizeResponseErrors} from './utils';
@@ -61,7 +61,7 @@ export const login = (username, password) => dispatch => {
             .then(res => res.json())
             .then(({authToken}) => storeAuthInfo(authToken, dispatch))
             .catch(err => {
-                const {code} = err;
+                // const {code} = err;
                 const message =
                     'Incorrect username or password';
                 dispatch(authError(err));
