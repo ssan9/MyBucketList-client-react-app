@@ -4,6 +4,7 @@
 
 .stories{
 	width: 100%;
+
 }
 
 .story {
@@ -12,11 +13,11 @@
 	width: 90%;
 	background-color: rgba(0, 0, 0, 0.05);
 	text-align: center;
-	margin: 0 auto;
+	margin: 0 auto 80px;
+
 }
 
 .user-story {
-	
 	text-align: center;
 	margin: 0 auto;
 }
@@ -24,4 +25,5 @@
 .user-info {
 	margin-bottom: 0;
 	text-align: right;
+
 }

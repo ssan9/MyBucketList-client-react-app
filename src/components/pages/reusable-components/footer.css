@@ -3,9 +3,10 @@
   padding-top: 12px;
   padding-bottom: 12px;
   background-color: #1076B0;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
   color: white;
-  margin-top: 80px;
-  /*position: fixed;*/
 }
 
 .footer a{
