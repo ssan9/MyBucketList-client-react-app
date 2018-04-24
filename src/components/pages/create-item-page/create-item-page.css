@@ -83,7 +83,7 @@ option:first-child{
   background: #155544;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   .due-date {
     width: 100%;
     /*background-color: green;*/
@@ -95,6 +95,7 @@ option:first-child{
   }
   #due-date {
     width: 295px;
+    width: 100%;
     background-color: purple;
   }
 
