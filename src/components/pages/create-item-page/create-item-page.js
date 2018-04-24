@@ -32,67 +32,67 @@ export class CreateItemPage extends React.Component {
         <h2 className="title">Create Your Goal!</h2>
         <form className="goal-creation-form" onSubmit={e => this.onSubmit(e)}>
           <div className="fields">
-          <label htmlFor="description">Description</label>
-            <input
-              type="text"
-              name="description"
-              ref="description"
-              id="description"
-              className="create-goal"
-              aria-labelledby="Describe Your Goal!"
-              required
-            />
+            <label htmlFor="description">Description</label>
+              <input
+                type="text"
+                name="description"
+                ref="description"
+                id="description"
+                className="create-goal"
+                aria-labelledby="Describe Your Goal!"
+                required
+              />
             <label htmlFor="category">Category</label>
 
-            <select
-              name="category"
-              ref="category"
-              id="category"
-              placeholder="category"
-              aria-label="category"
-              className="create-goal"
-              required
-            >
-              <option value="0"></option>
-              <option value="Sports">Sports</option>
-              <option value="Events">Events</option>
-              <option value="Hobbies">Hobbies</option>
-              <option value="Travel">Travel</option>
-              <option value="Academics">Academics</option>
-              <option value="Challenge your Limits">
-                Challenge your Limits
-              </option>
-              <option value="Other">Other</option>
-            </select>
-            
+              <select
+                name="category"
+                ref="category"
+                id="category"
+                placeholder="category"
+                aria-label="category"
+                className="create-goal"
+                required
+              >
+                <option value="0"></option>
+                <option value="Sports">Sports</option>
+                <option value="Events">Events</option>
+                <option value="Hobbies">Hobbies</option>
+                <option value="Travel">Travel</option>
+                <option value="Academics">Academics</option>
+                <option value="Challenge your Limits">
+                  Challenge your Limits
+                </option>
+                <option value="Other">Other</option>
+              </select>
+
             <div className="due-date">
-            <label htmlFor="due-date">Due Date</label>
+              <label htmlFor="due-date">Due Date</label>
 
-            <input
-              type="date"
-              name="due-date"
-              ref="due"
-              id="due-date"
-              className="create-goal"
-              aria-labelledby="Due Date"
-              placeholder="Due Date"
-              required
+                <input
+                  type="date"
+                  name="due-date"
+                  ref="due"
+                  id="due-date"
+                  className="create-goal"
+                  aria-labelledby="Due Date"
+                  placeholder="Due Date"
+                  required
 
-            />
+                />
             </div>
             <div className="form-submit">
-            <div className="buttons">
-            <button type="submit" className="save-button button" id="save">
-                Save
-              </button>
-              <button
-                className="cancel-button button"
-                id="cancel"
-                onClick={e => this.onClick(e)}
-              >
-                Cancel
-              </button>
-              
+              <div className="buttons">
+                <button type="submit" className="save-button button" id="save">
+                  Save
+                </button>
+                <button
+                  className="cancel-button button"
+                  id="cancel"
+                  onClick={e => this.onClick(e)}
+                >
+                  Cancel
+                </button>
+                
               </div>
             </div>
           </div>
