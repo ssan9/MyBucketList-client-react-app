@@ -1,7 +1,7 @@
 .create-item {
   background-color: #CBE9F2;
   z-index: -1;
-  min-height: 765px;
+  min-height: 1000px;
 }
 
 .title {
@@ -83,7 +83,7 @@ option:first-child{
   background: #155544;
 }
 
-@media only screen and (max-device-width: 850px) {
+@media only screen and (max-device-width: 1200px) {
   .due-date {
     width: 100%;
     /*background-color: green;*/
@@ -94,10 +94,27 @@ option:first-child{
     display: block;
   }
   #due-date {
-    width: 295px;
+    width: 600px;
     /*width: 100%;*/
     /*background-color: purple;*/
   }
+}
+
+@media only screen and (max-device-width: 850px) {
+  /*.due-date {
+    width: 100%;*/
+    /*background-color: green;*/
+  /*}
+  .due-date label {*/
+    /*width: 200%;*/
+    /*background-color: yellow;*/
+    /*display: block;
+  }
+  #due-date {
+    width: 295px;*/
+    /*width: 100%;*/
+    /*background-color: purple;*/
+  /*}*/
 
   .buttons{
     float: none;
