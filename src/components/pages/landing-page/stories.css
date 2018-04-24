@@ -14,7 +14,7 @@
 	background-color: rgba(0, 0, 0, 0.05);
 	text-align: center;
 	margin: 0 auto 80px;
-
+	/*background-color: pink;*/
 }
 
 .user-story {
@@ -27,3 +27,4 @@
 	text-align: right;
 
 }
+

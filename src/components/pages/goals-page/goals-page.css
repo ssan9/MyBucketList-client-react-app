@@ -2,6 +2,7 @@
 	background-color: #CBE9F2;
 	z-index: 1;
   min-height: 683px;
+  overflow: hidden;
 }
 
 .title {
@@ -19,7 +20,7 @@
 	color: white;
 	padding-top: 0.01%;
 	padding-bottom: 0.01%;
-  margin-bottom: 45px;
+  margin-bottom: 80px;
 
 }
 

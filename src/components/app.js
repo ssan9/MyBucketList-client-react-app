@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Route, withRouter } from "react-router-dom";
-
+import "./app.css";
 import NavigationBar from "./pages/reusable-components/navigation-bar";
 import LandingPage from "./pages/landing-page/landing-page";
 import LoginPage from "./pages/login-page/login-page";

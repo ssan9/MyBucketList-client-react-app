@@ -6,6 +6,8 @@ import LoginForm from "../../login-form.js";
 // import { Field, reduxForm, focus } from "redux-form";
 // import { registerUser } from "../../../actions/users";
 import { login } from "../../../actions/auth";
+import Footer from "../reusable-components/footer";
+
 // import Input from "../../input";
 // import SignupForm from "./signup-form";
 
@@ -40,7 +42,7 @@ export class LoginPage extends React.Component {
       <LoginForm onSubmit={this.submit} error_message={this.state.error}
        />
       <h1 className="signup-request">If new user,  <Link to="/signup" className="signup-link">Signup</Link></h1>
-
+      <Footer />
     </div>
   );
  }

@@ -5,6 +5,7 @@ import { connect } from "react-redux";
 import { registerUser } from "../../../actions/users";
 import { login } from "../../../actions/auth";
 // import Input from "../../input";
+import Footer from "../reusable-components/footer";
 import SignupForm from "./signup-form";
 
 import "./signup-page.css";
@@ -37,6 +38,7 @@ export class SignupPage extends React.Component {
         <h2 className="title">Signup</h2>
 
         <SignupForm onSubmit={this.submit} error_message={this.state.error} />
+        <Footer />
       </div>
     );
   }

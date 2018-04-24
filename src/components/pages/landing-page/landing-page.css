@@ -2,7 +2,9 @@
 	background-color: #F2F2F2;
 	z-index: -1;
   font-family: 'Marmelad', sans-serif;
+  overflow: hidden;
 }
+
 
 .bucketlist-image {
     background-image: url("https://images.unsplash.com/photo-1463693396721-8ca0cfa2b3b5?ixlib=rb-0.3.5&s=54c937de2c82cae5620cc9a57c30d568&auto=format&fit=crop&w=1050&q=80");
