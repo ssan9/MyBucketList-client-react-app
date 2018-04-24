@@ -1,14 +1,7 @@
 import * as actions from "../actions/index";
 
-// removed LEDGERS - find this and remove
-
 const initialState = {
   goals: [],
-  // goalsForm: {
-  // 		description: '',
-  // 		category: '',
-  // 		due: ''
-  // }
   error: null
 };
 

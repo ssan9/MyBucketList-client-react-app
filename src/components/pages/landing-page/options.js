@@ -1,11 +1,9 @@
 import React from "react";
 import { connect } from "react-redux";
-
 import "../reusable-components/float-grid.css";
 import "./options.css";
-
 import "../images/update.png";
-import "../images/edit.png";
+import "../images/list.png";
 import "../images/notepad.png";
 
 export function Options(props) {

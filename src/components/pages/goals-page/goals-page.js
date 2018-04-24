@@ -3,13 +3,9 @@ import { connect } from "react-redux";
 import { getGoals } from "../../../actions/index";
 import TodoGoals from "./todo-goals";
 import requiresLogin from '../../requires-login';
-
-// import CompletedGoals from "./completed-goals";
 import { Footer } from "../reusable-components/footer";
-
-// import { Link, Redirect } from "react-router-dom";
 import "./goals-page.css";
-//why this.props.goal and not just goals like in todo-goals
+
 export class GoalsPage extends React.Component {
    componentDidMount() {
     console.log(this.props);
@@ -17,7 +13,6 @@ export class GoalsPage extends React.Component {
     this.props.dispatch(getGoals());
   }
 
-//from where did it get goals? are we getting them from dispatch? //are we sending the goals to TodoGoals?
   render() {
     console.log(this.props);
 

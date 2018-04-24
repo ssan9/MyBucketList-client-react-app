@@ -8,21 +8,6 @@ button.edit{
   background-color: #307c68;
 }
 
-/*button.share{
-  background-color: #1076B0;
-  display: inline-block;
-}
-
-button.share a{
-  text-decoration: none;
-}
-
-#share_button{
-  width: 34%;
-  position: relative;
-  top: 10px;
-}
-*/
 button.delete{
   background-color: #a10b0b;
 }
@@ -38,20 +23,8 @@ button.delete{
     padding-top: 5px;
     padding-bottom: 5px;
   }
-
-  /*#share_button {
-width: 37%;  
-top:17px;
-}*/
 }
 
-/*@media only screen and (max-width: 1500px) {
-*//*#share_button {
-width: 41%; */
-/*top:12px;*/
-/*}
-}
-*/
 @media only screen and (max-width: 1400px) {
   .action-buttons {
     font-size: 14px;
@@ -59,12 +32,7 @@ width: 41%; */
     padding-bottom: 5px;
   }
 }
-/*#share_button {
-width: 43%;  */
-/*top:12px;*/
-/*}
-  }
-*/
+
 @media only screen and (max-width: 1350px) {
 
 .action-buttons {
@@ -72,38 +40,14 @@ width: 43%;  */
     padding-top: 5px;
     padding-bottom: 5px;
   }
-
-  /*#share_button {
-width: 45%;  */
-/*top:12px;*/
-/*}*/
 }
 
 @media only screen and (max-width: 1300px) {
   .action-buttons {
-    /*font-size: 14px;*/
     padding-top: 3px;
     padding-bottom: 3px;
   }
-
-/*  #share_button {
-    width: 45%;  
-    top:14px;
-  }*/
 }
-
-@media only screen and (max-width: 1200px) {
-  .action-buttons {
-    /*font-size: 10px;*/
-    /*padding: 5px 1px;*/
-  }
-
-  /*#share_button {
-    width: 46%;  
-    top:13px;
-  }*/
-}
-
 
 @media only screen and (max-width: 1150px) {
   button.edit {
@@ -117,11 +61,6 @@ width: 45%;  */
     padding-top: 4px;
     padding-bottom: 4px;
   }
-/*
-  #share_button {
-    width: 46%;  
-    top:16px;
-  }*/
 }
 
 
@@ -139,24 +78,12 @@ width: 45%;  */
 	button.edit{
 		font-size: 12px;
 	}
-  /*#share_button {
-    width: 44%;  
-  }*/
 }
 
 @media only screen and (max-width: 1000px) {
   button.edit{
     font-size: 12px;
   }
-  /*#share_button {
-    width: 48%;  
-  }*/
-}
-
-@media only screen and (max-width: 950px) {
- /* #share_button {
-    width: 52%; 
-  }*/
 }
 
 @media only screen and (max-width: 930px) {
@@ -166,39 +93,15 @@ width: 45%;  */
   button.edit {
     width: 40%;
   }
-  /* #share_button {
-    width: 53%; 
-  }*/
 }
 
-/*@media only screen and (max-width: 900px) {
-  #share_button {
-    width: 55%;  
-  }
-}*/
-
-/*@media only screen and (max-width: 850px) {
-  #share_button {
-    width: 65%;  
-  }
-}*/
-
 @media only screen and (max-width: 800px) {
-  /*#share_button {
-    width: 55%; */
-    /*top: 25px; */
-  /*}*/
-
   button.edit{
     width: 10%;
   }
 }
 
 @media only screen and (max-width: 850px) {
-  /*#share_button {
-    width: 55%; 
-    top: 14px; 
-  }*/
   button.edit{
     width: 35%;
     padding-top: 5px;
@@ -206,31 +109,14 @@ width: 45%;  */
   }
 }
 
-/*@media only screen and (max-width: 800px) {
-  #share_button {
-    width: 16%;  
-  }
-}*/
-
-/*@media only screen and (max-width: 750px) {
-  #share_button {
-    width: 18%;  
-  }
-}*/
-
 @media only screen and (max-width: 730px) {
-    .action-buttons {
+  .action-buttons {
        margin: 8px 3px;
        padding-top: 5px;
        padding-bottom: 5px;
        font-size: 15px;
   }
 
- /* #share_button{
-    width: 13%;  
-    top: 25px;
-  }
-*/
   button.edit {
     width: 10%;
     padding-bottom: 5px;
@@ -243,52 +129,9 @@ width: 45%;  */
   }
 }
 
-/*@media only screen and (max-width: 700px) {
-  #share_button {
-    width: 20%;
-    top: 24px;
-  }
-}*/
-
-@media only screen and (max-width: 650px) {
-  /*#share_button {
-    width: 14%;
-    top: 24px;
-  }
-  */
-}
-
 @media only screen and (max-width: 600px) {
-  /*#share_button {
-    width: 14%;
-  }*/
   button.edit {
     width: 12%;
   }
 }
 
-/*@media only screen and (max-width: 550px) {
- #share_button {
-    width: 16%;
-  }
-}
-
-@media only screen and (max-width: 500px) {
- #share_button {
-    width: 17%;
-  }
-}
-
-@media only screen and (max-width: 450px) {
- #share_button {
-    width: 18%;
-  }
-}
-
-@media only screen and (max-width: 400px) {
- #share_button {
-    width: 24%;
-  }
-}
-
-*/

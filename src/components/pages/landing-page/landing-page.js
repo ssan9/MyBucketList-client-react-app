@@ -7,9 +7,6 @@ import { Footer } from "../reusable-components/footer";
 
 import "../reusable-components/float-grid.css";
 
-// import { Link, Redirect } from "react-router-dom";
-
-// import { title, landingLinks, links } from "./nav-links-and-titles-page";
 import "./landing-page.css";
 
 export function LandingPage(props) {

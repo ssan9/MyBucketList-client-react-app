@@ -15,11 +15,4 @@ export function UserStories(props) {
 	);
 }
 
-
-
-
-
-
-
-
 export default connect()(UserStories);

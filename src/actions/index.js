@@ -31,8 +31,6 @@ export const goalsError = error => ({
   error
 });
 
-//////////
-
 export const postTodoGoal = goal => (dispatch, getState) => {
   const authToken = getState().auth.authToken;
   // const user = getState().auth.currentUser.id; GOOD!
@@ -52,12 +50,6 @@ export const postTodoGoal = goal => (dispatch, getState) => {
     });
 };
 
-// export const POST_GOAL_SUCCESS = "POST_GOAL_SUCCESS";
-// export const postGoalSuccess = goal => ({
-//   type: POST_GOAL_SUCCESS,
-//   goal
-// });
-
 export const putGoal = updateGoal => (dispatch, getState) => {
   const authToken = getState().auth.authToken;
   // const user = getState().auth.currentUser.username;
@@ -75,12 +67,6 @@ export const putGoal = updateGoal => (dispatch, getState) => {
     });
 };
 
-// export const PUT_GOAL_SUCCESS = "PUT_GOAL_SUCCESS";
-// export const putGoalSuccess = goal => ({
-//   type: PUT_GOAL_SUCCESS,
-//   goal
-// });
-
 export const deleteGoal = goalId => (dispatch, getState) => {
   const authToken = getState().auth.authToken;
   // const user = getState().auth.currentUser.username;
@@ -91,20 +77,12 @@ export const deleteGoal = goalId => (dispatch, getState) => {
       "Content-Type": "application/json"
     }
   })
-    // .then(res => res.json())
     .then(goal => dispatch(getGoals(goal)))
     
-     // .then(goal => dispatch(deleteGoalSuccess(goal)))
     .catch(err => {
       dispatch(goalsError(err));
     });
 };
-
-// export const DELETE_GOAL_SUCCESS = "DELETE_GOAL_SUCCESS";
-// export const deleteGoalSuccess = goal => ({
-//   type: DELETE_GOAL_SUCCESS,
-//   goal
-// });
 
 export const CLEAR_GOAL_FORM = "CLEAR_GOAL_FORM";
 export const clearGoalForm = () => ({

@@ -1,16 +1,11 @@
 import React from "react";
 import { connect } from "react-redux";
-
 import TableButtons from "./table-buttons";
-// import { Link, Redirect } from "react-router-dom";
 import "./goals-page.css";
 import "./todo-goals.css";
 
 import { putGoal } from "../../../actions/index";
 
-
-//why not this.props.goal
-//how does computer know what does check mean?
 export class TodoGoals extends React.Component {
   toggleChecked(goal) {
     goal.checked = !goal.checked;
@@ -18,8 +13,6 @@ export class TodoGoals extends React.Component {
   }
 
   render() {
-          console.log(this.props)
-
     let goals = this.props.goals.map((goal, index) => (
       <tr key={index}>
        

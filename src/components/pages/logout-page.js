@@ -1,10 +1,5 @@
 import React from "react";
 import { connect } from "react-redux";
-// import { Link, Redirect } from "react-router-dom";
-
-// import {title, landingLinks, links} from "./nav-links-and-titles-page";
-
-// import "./logout-page.css";
 
 export function LogoutPage(props) {
   return (

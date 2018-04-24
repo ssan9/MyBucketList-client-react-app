@@ -10,7 +10,6 @@ export default () => Component => {
         } else if (!loggedIn || error) {
             return <Redirect to="/login" />;
         }
-        
         return <Component {...passThroughProps} />;
     }
 

@@ -87,34 +87,18 @@ option:first-child{
 @media only screen and (max-device-width: 850px) {
   .due-date {
     width: 100%;
-    /*background-color: green;*/
   }
   .due-date label {
-    /*width: 200%;*/
-    /*background-color: yellow;*/
     display: block;
   }
   #due-date {
     width: 625px;
-    /*width: 100%;*/
-    /*background-color: purple;*/
   }
 }
 
 @media only screen and (max-device-width: 600px) {
-  /*.due-date {
-    width: 100%;*/
-    /*background-color: green;*/
- /* }
-  .due-date label {
-    width: 200%;*/
-    /*background-color: yellow;
-    display: block;
-  }*/
   #due-date {
     width: 295px;
-    /*width: 100%;*/
-    /*background-color: purple;*/
   }
 
   .buttons{

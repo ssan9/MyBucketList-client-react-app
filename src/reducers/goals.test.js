@@ -14,27 +14,6 @@ describe('goalReducer', () => {
 		const state = goalReducer(currentState, {type: '_UNKNOWN'});
 		expect(state).toBe(currentState);
 	});
-
-	// describe('getGoalsSuccess', () => {
-	// 	it('Should render goals on success', () => {
-	// 		let state = {
-	// 			goals: [],
-	// 			data: "hi"
-	// 		};
-	// 		state = goalReducer(state, getGoalsSuccess(data));
-	// 		expect(state.goals).toEqual([]);
-	// 	});
-	// });
-
-// 	describe('goalsError', () => {
-// 		it('Should give an error if request is not correct', () => {
-// 			let state = {
-// 				goals: [],
-// 			};
-// 			state = goalReducer(state, goalsError(error));
-// 			expect(state.goals).toEqual('asd'); 
-// 		})
-// 	})
 });
 
 

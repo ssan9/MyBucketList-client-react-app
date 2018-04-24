@@ -1,12 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
 import Footer from "../reusable-components/footer";
-
 import { postTodoGoal } from "../../../actions/index";
 import requiresLogin from '../../requires-login';
-
-// import { Link, Redirect } from "react-router-dom";
-
 import "./create-item-page.css";
 
 export class CreateItemPage extends React.Component {
@@ -44,7 +40,6 @@ export class CreateItemPage extends React.Component {
                 required
               />
             <label htmlFor="category">Category</label>
-
               <select
                 name="category"
                 ref="category"
@@ -65,7 +60,6 @@ export class CreateItemPage extends React.Component {
                 </option>
                 <option value="Other">Other</option>
               </select>
-
             <div className="due-date">
               <label htmlFor="due-date">Due Date</label>
 
@@ -78,7 +72,6 @@ export class CreateItemPage extends React.Component {
                   aria-labelledby="Due Date"
                   placeholder="Due Date"
                   required
-
                 />
             </div>
             <div className="form-submit">
@@ -93,7 +86,6 @@ export class CreateItemPage extends React.Component {
                 >
                   Cancel
                 </button>
-                
               </div>
             </div>
           </div>

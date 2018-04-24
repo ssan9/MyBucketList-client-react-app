@@ -1,9 +1,7 @@
 import React from "react";
-import { Field, reduxForm } from "redux-form"; //focus removed
+import { Field, reduxForm } from "redux-form";
 import "font-awesome/css/font-awesome.min.css";
-import { Link } from "react-router-dom"; //Redirect was also there with Link after a comma
-
-// import Input from "../../input";
+import { Link } from "react-router-dom";
 import { required, nonEmpty, length, isTrimmed } from "../../../validators";
 import "./signup-form.css";
 
@@ -27,6 +25,7 @@ const renderField = ({
         )))}
   </div>
 );
+
 export function SignupForm(props) {
   const { handleSubmit, submitting } = props;
   return (
@@ -112,7 +111,7 @@ export function SignupForm(props) {
         <h4 className="terms">
           By Signing up you agree to the Terms and Conditions
         </h4>
-      
+
         <button type="submit" className="create-account" disabled={submitting}>
           CREATE ACCOUNT
         </button>

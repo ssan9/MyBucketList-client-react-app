@@ -1,11 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-
 import { putGoal } from "../../../actions/index";
-
-// import { Link, Redirect } from "react-router-dom";
-
-// import "./create-item-page.css";
 
 export class EditPage extends React.Component {
   constructor(props) {
@@ -15,8 +10,6 @@ export class EditPage extends React.Component {
   onSubmit(event) {
     console.log(this, "this");
     console.log(this.props, "props");
-
-    // console.log(match);
     event.preventDefault();
     let goal = {
         id: this.props.match.params.id,
@@ -24,11 +17,8 @@ export class EditPage extends React.Component {
         category: this.refs.category.value,
         due: this.refs.due.value
       };
-    // const value = this.input.value;
     this.props.dispatch(putGoal(goal));
     this.props.history.push(`/goals/`);
-    // this.input.value = "";
-    // this.input.focus();
   }
 
   onClick(event) {
