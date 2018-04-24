@@ -35,6 +35,7 @@ export class EditPage extends React.Component {
       this.refs.description.value="";
       this.refs.category.value="";
       this.refs.due.value="";
+      this.props.history.push(`/goals/`);
     };
 
   render() {
