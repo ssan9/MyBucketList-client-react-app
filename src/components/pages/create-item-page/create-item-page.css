@@ -95,27 +95,27 @@ option:first-child{
     display: block;
   }
   #due-date {
-    width: 600px;
+    width: 800px;
     /*width: 100%;*/
     /*background-color: purple;*/
   }
 }
 
 @media only screen and (max-device-width: 850px) {
-  /*.due-date {
-    width: 100%;*/
+  .due-date {
+    width: 100%;
     /*background-color: green;*/
-  /*}
-  .due-date label {*/
-    /*width: 200%;*/
+  }
+  .due-date label {
+    width: 200%;
     /*background-color: yellow;*/
-    /*display: block;
+    display: block;
   }
   #due-date {
-    width: 295px;*/
-    /*width: 100%;*/
+    /*width: 295px;*/
+    width: 100%;
     /*background-color: purple;*/
-  /*}*/
+  }
 
   .buttons{
     float: none;
