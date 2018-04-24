@@ -1,6 +1,6 @@
 .create-item {
-	background-color: #CBE9F2;
-	z-index: -1;
+  background-color: #CBE9F2;
+  z-index: -1;
   min-height: 765px;
 }
 
@@ -13,9 +13,9 @@
 }
 
 .goal-creation-form {
-	padding: 40px;
-	max-width: 700px;
-	margin: 0 auto;
+  padding: 40px;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .create-goal{
@@ -25,7 +25,7 @@
   color: #1076B0;
   height: 60px;
   padding-left: 13px;
-  background-color: pink;
+  /*background-color: pink;*/
 }
 
 label {
@@ -45,7 +45,7 @@ option:first-child{
 }
 
 .form-submit {
-	margin:30px 0;
+  margin:30px 0;
 }
 
 .buttons {
@@ -90,13 +90,13 @@ option:first-child{
   }
   .due-date label {
     /*width: 200%;*/
-    background-color: yellow;
+    /*background-color: yellow;*/
     display: block;
   }
   #due-date {
     width: 295px;
     /*width: 100%;*/
-    background-color: purple;
+    /*background-color: purple;*/
   }
 
   .buttons {
@@ -104,4 +104,3 @@ option:first-child{
     text-align: center;
   }
 }
-
