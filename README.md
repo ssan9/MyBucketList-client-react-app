@@ -1,3 +1,22 @@
+## BucketList App
+
+
+
+
+## Wireframe for the App
+
+Wireframe-> https://www.figma.com/file/uEcJhLc6ax2ZRmALjEmDCg/BucketList
+
+## Introduction
+
+A Web App where users would be able to keep a track on their Finances by Budgeting.They will get a feedback on whether they are safe in the budget scale-on the basis of their savings or are over spending their income. They can also keep a track on their expenses month-wise, so that they get an idea about how much they have been spending monthly. They can add new data, remove or update if there's a change, or just see their monthly expenses.
+
+This App has been developed with the help of HTML, CSS, Javascript, jQuery, Node and Express. Also, mLab is used to store data and Heroku has been used for deployment.
+
+Ajax has been used to make asynchronous requests to get, delete, post or update data from the server. Some plug-ins are also included for additional features, such as Moment.js to set the date's format.
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
