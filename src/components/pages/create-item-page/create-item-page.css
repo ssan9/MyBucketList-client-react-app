@@ -95,7 +95,7 @@ option:first-child{
     display: block;
   }
   #due-date {
-    width: 100%;
+    width: 650px;
     /*width: 100%;*/
     /*background-color: purple;*/
   }
