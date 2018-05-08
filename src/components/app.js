@@ -40,8 +40,6 @@ export class App extends React.Component {
     clearInterval(this.refreshInterval);
   }
 
-  // <Route exact path="/dashboard" component={Dashboard} />
-  // <Route exact path="/register" component={RegistrationPage} />
   render() {
     return (
       <div className="app">

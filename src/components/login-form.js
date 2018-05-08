@@ -19,28 +19,28 @@ const renderField = ({ input, placeholder, type, meta: { touched, error } }) => 
 
                         <div className="fields">
 
-                        <Field
-                            component={renderField}
-                            type="text"
-                            name="username"
-                            className="username user-login"
-                            placeholder="Username"
-                            value="uiop"
-                            validate={[required, nonEmpty]}
-                        />
-                        </div>
+                            <Field
+                                component={renderField}
+                                type="text"
+                                name="username"
+                                className="username user-login"
+                                placeholder="Username"
+                                value="uiop"
+                                validate={[required, nonEmpty]}
+                            />
+                            </div>
                         <div className="fields">
                             {props.error_message}
 
-                        <Field
-                            component={renderField}
-                            type="password"
-                            className="credentials password user-login"
-                            name="password"
-                            placeholder="Password"
-                            value="qwertyuiop"
-                            validate={[required, nonEmpty]}
-                        />
+                            <Field
+                                component={renderField}
+                                type="password"
+                                className="credentials password user-login"
+                                name="password"
+                                placeholder="Password"
+                                value="qwertyuiop"
+                                validate={[required, nonEmpty]}
+                            />
 
                         </div>
                         <div className="demo-login">
