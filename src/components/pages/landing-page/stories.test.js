@@ -1,6 +1,5 @@
 import React from "react";
 import {shallow} from 'enzyme';
-
 import {Stories} from "./stories";
 
 describe('<Stories />', () => {

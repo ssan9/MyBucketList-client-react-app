@@ -1,6 +1,5 @@
 import React from "react";
 import { connect } from "react-redux";
-
 import "./stories.css";
 import "../reusable-components/float-grid.css";
 
@@ -39,12 +38,5 @@ export class Stories extends React.Component {
 		);
 	}
 }
-
-
-
-
-
-
-
 
 export default connect()(Stories);

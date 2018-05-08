@@ -4,9 +4,7 @@ import { Options } from "./options";
 import { ImageList } from "./image-list";
 import { UserStories } from "./user-stories";
 import { Footer } from "../reusable-components/footer";
-
 import "../reusable-components/float-grid.css";
-
 import "./landing-page.css";
 
 export function LandingPage(props) {
