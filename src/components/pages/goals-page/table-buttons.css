@@ -61,18 +61,7 @@ button.delete{
     padding-top: 4px;
     padding-bottom: 4px;
   }
-}
-
-
-@media only screen and (max-width: 1140px) {
-	button.edit, button.share {
-		/*font-size: 18px;*/
-	}
-  /*#share_button {
-    width: 52%;  
-    top:15px;
-  }*/
-}
+}	
 
 @media only screen and (max-width: 1120px) {
 	button.edit{
@@ -90,6 +79,7 @@ button.delete{
   .action-buttons {
     font-size: 10px; 
   }
+  
   button.edit {
     width: 40%;
   }

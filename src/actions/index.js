@@ -44,7 +44,6 @@ export const postTodoGoal = goal => (dispatch, getState) => {
   })
     .then(res => res.json())
     .then(goal => dispatch(getGoals(goal)))
-    //.then(goal => dispatch(postGoalSuccess(goal)))
     .catch(err => {
       dispatch(goalsError(err));
     });
