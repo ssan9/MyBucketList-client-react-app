@@ -2,7 +2,6 @@ import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { deleteGoal } from "../../../actions/index";
-import "../images/facebook-share-button.png";
 import "./table-buttons.css";
 
 export function TableButtons(props) {  
