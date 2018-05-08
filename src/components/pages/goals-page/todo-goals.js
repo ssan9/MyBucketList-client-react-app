@@ -28,7 +28,6 @@ export class TodoGoals extends React.Component {
             <TableButtons goal={goal} />
         </td>
       </tr>
-                
     ));
     
     return (
