@@ -77,3 +77,11 @@
 	background-repeat: no-repeat;
 	margin: 4% auto;
 }
+
+@media only screen and (max-device-width: 720px) {
+	.theme {
+		width: 97%;
+	}
+}
+
+
