@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
-
 import "./footer.css";
+
 export function Footer(props) {
   return (
 		<footer className="footer">

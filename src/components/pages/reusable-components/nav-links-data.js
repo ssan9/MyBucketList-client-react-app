@@ -8,15 +8,7 @@ export const links = [
   {
     text: "View Your Goals",
     href: "/goals"
-  },
-  
-
-
-
-  // {
-  //   text: "Logout",
-  //   href: "/logout"
-  // }
+  }
 ];
 
 export const landingLinks = [
@@ -28,7 +20,6 @@ export const landingLinks = [
     text: "Login",
     href: "/login"
   },
-
-  links[0], links[1]
+    links[0], links[1]
 ];
 
