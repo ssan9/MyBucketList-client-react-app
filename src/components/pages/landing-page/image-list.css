@@ -78,9 +78,9 @@
 	margin: 4% auto;
 }
 
-@media only screen and (max-device-width: 720px) {
+@media only screen and (max-width: 720px) {
 	.theme {
-		width: 97%;
+		width: 97.6%;
 	}
 }
 
