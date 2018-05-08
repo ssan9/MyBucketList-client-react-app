@@ -1,0 +1,78 @@
+class LinkedList{
+	constructor() {
+	this.length = 0;
+	this.head = null;
+	}
+
+	insert(index, value) {
+			if(index<0 || index > this.length) {
+				throw new Error('Index error');
+			}
+
+			const newNode = {
+					value
+			}
+
+			if(index == 0) {
+					newNode.next = this.head;
+					this.head = newNode;
+			}
+			else{
+					const node = this._find(index-1);
+					newNode.next = node.next;
+					node.next = newNode
+			}
+			length++;
+	}
+}
+
+function node(data, next) {
+	this.data = data,
+	this.next = next
+}
+
+var n5 = head;
+f = head;
+p = head;
+
+while(f.next !=null && f.next.next != null){
+	f = f.next.next;
+	p = f.next
+}
+
+fucntion mergeSort(array) {
+		if(array.length <= 1) {
+				return array;
+		}
+			
+		const middle = Math.floor(array.length/2);
+		let left = array.splice(0, middle);
+		let right = array.splice(middle, array.length);
+		left = mergeSort(left);
+		right = mergeSort(right);
+		return merge(left, right, array);
+}
+
+function merge(left, right, array) {
+	let leftIndex = 0;
+	let rightIndex = 0;
+	let outputIndex = 0;
+
+	while(leftIndex < left.length && rightIndex<right.length) {
+			if (left[leftIndex] < right[rightIndex]) {
+					array[outputIndex++] = left[leftIndex++]
+			}
+			else {
+				array[outputIndex++] = right[rightIndex++]
+			}
+	}
+
+	for (i = leftIndex; i<left.length; i++) {
+			array[outputIndex++] = left[i]
+	}
+	for(i = rightIndex; i<right.length; i++) {
+			array[outputIndex++] = right[i]
+	}
+
+	return array;
+}
