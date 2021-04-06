@@ -18,7 +18,7 @@ Wireframe-> https://www.figma.com/file/uEcJhLc6ax2ZRmALjEmDCg/BucketList
 
 ## Overview
 
-A Web Application which allows the user to create, view and edit his BucketList Items.
+A React Web Application which allows the user to create, view and edit his BucketList Items.
 
 ## Functionality
 
