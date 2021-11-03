@@ -21,7 +21,7 @@
     "redux-devtools-extension": "^2.13.2",
     "redux-form": "^7.3.0",
     "redux-thunk": "^2.2.0",
-    "validator": "^7.0.0"
+    "validator": "^13.7.0"
   },
   "scripts": {
     "start": "react-scripts start",
